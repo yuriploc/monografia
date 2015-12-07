@@ -1,3 +1,6 @@
+#### TCC IFCE
+Trabalho de conclusão de curso apresentado à banca examinadora do Instituto Federal de Educação, Ciência e Tecnologia do Ceará (IFCE) para obtenção do grau de bacharel em Engenharia de Computação sob a orientação do Prof. Dr. Cidcley Teixeira de Souza.
+
 #### Partida
 Como a narrativa (storytelling) ou o seu conceito pode ser extendido (ampliado/explorado) para múltiplos suportes ou mídias, especialmente as digitais?
 

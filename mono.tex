@@ -1,5 +1,5 @@
 %% abtex2-modelo-artigo.tex, v-1.9.5 laurocesar
-%% Copyright 2012-2015 by abnTeX2 group at http://www.abntex.net.br/ 
+%% Copyright 2012-2015 by abnTeX2 group at http://www.abntex.net.br/
 %%
 %% This work may be distributed and/or modified under the
 %% conditions of the LaTeX Project Public License, either version 1.3
@@ -10,9 +10,9 @@
 %% version 2005/12/01 or later.
 %%
 %% This work has the LPPL maintenance status `maintained'.
-%% 
+%%
 %% The Current Maintainer of this work is the abnTeX2 team, led
-%% by Lauro César Araujo. Further information are available on 
+%% by Lauro César Araujo. Further information are available on
 %% http://www.abntex.net.br/
 %%
 %% This work consists of the files abntex2-modelo-artigo.tex and
@@ -22,27 +22,27 @@
 % ------------------------------------------------------------------------
 % ------------------------------------------------------------------------
 % abnTeX2: Modelo de Artigo Acadêmico em conformidade com
-% ABNT NBR 6022:2003: Informação e documentação - Artigo em publicação 
+% ABNT NBR 6022:2003: Informação e documentação - Artigo em publicação
 % periódica científica impressa - Apresentação
 % ------------------------------------------------------------------------
 % ------------------------------------------------------------------------
 
 \documentclass[
-	% -- opções da classe memoir --
-	article,			% indica que é um artigo acadêmico
-	11pt,				% tamanho da fonte
-	oneside,			% para impressão apenas no verso. Oposto a twoside
-	a4paper,			% tamanho do papel. 
-	% -- opções da classe abntex2 --
-	%chapter=TITLE,		% títulos de capítulos convertidos em letras maiúsculas
-	%section=TITLE,		% títulos de seções convertidos em letras maiúsculas
-	%subsection=TITLE,	% títulos de subseções convertidos em letras maiúsculas
-	%subsubsection=TITLE % títulos de subsubseções convertidos em letras maiúsculas
-	% -- opções do pacote babel --
-	english,			% idioma adicional para hifenização
-	brazil,				% o último idioma é o principal do documento
-	sumario=tradicional
-	]{abntex2}
+% -- opções da classe memoir --
+article,			% indica que é um artigo acadêmico
+11pt,				% tamanho da fonte
+oneside,			% para impressão apenas no verso. Oposto a twoside
+a4paper,			% tamanho do papel.
+% -- opções da classe abntex2 --
+%chapter=TITLE,		% títulos de capítulos convertidos em letras maiúsculas
+%section=TITLE,		% títulos de seções convertidos em letras maiúsculas
+%subsection=TITLE,	% títulos de subseções convertidos em letras maiúsculas
+%subsubsection=TITLE % títulos de subsubseções convertidos em letras maiúsculas
+% -- opções do pacote babel --
+english,			% idioma adicional para hifenização
+brazil,				% o último idioma é o principal do documento
+sumario=tradicional
+]{abntex2}
 
 
 % ---
@@ -50,7 +50,7 @@
 % ---
 
 % ---
-% Pacotes fundamentais 
+% Pacotes fundamentais
 % ---
 \usepackage{lmodern}			% Usa a fonte Latin Modern
 \usepackage[T1]{fontenc}		% Selecao de codigos de fonte.
@@ -61,13 +61,13 @@
 \usepackage{graphicx}			% Inclusão de gráficos
 \usepackage{microtype} 			% para melhorias de justificação
 % ---
-		
+
 % ---
 % Pacotes adicionais, usados apenas no âmbito do Modelo Canônico do abnteX2
 % ---
 \usepackage{lipsum}				% para geração de dummy text
 % ---
-		
+
 % ---
 % Pacotes de citações
 % ---
@@ -83,24 +83,22 @@
 \renewcommand{\backref}{}
 % Define os textos da citação
 \renewcommand*{\backrefalt}[4]{
-	\ifcase #1 %
-		Nenhuma citação no texto.%
-	\or
-		Citado na página #2.%
-	\else
-		Citado #1 vezes nas páginas #2.%
-	\fi}%
+\ifcase #1 %
+Nenhuma citação no texto.%
+\or
+Citado na página #2.%
+\else
+Citado #1 vezes nas páginas #2.%
+\fi}%
 % ---
 
 % ---
 % Informações de dados para CAPA e FOLHA DE ROSTO
 % ---
-\titulo{Modelo Canônico de\\ Artigo científico com \abnTeX}
-\autor{Equipe \abnTeX\thanks{\url{http://www.abntex.net.br/}} \and Lauro
-César
-Araujo\thanks{laurocesar@laurocesar.com}}
-\local{Brasil}
-\data{2015, v-1.9.5}
+\titulo{Tópicos de pesquisa sobre narrativas transmídia em Computação}
+\autor{Yuri Soares de Oliveira\thanks{\url{soaresyuri@gmail.com}} \and Cidcley Teixeira de Souza\thanks{cidcley@ifce.edu.br}}
+\local{Fortaleza, Brasil}
+\data{Dezembro 2015}
 % ---
 
 % ---
@@ -112,21 +110,21 @@ Araujo\thanks{laurocesar@laurocesar.com}}
 % informações do PDF
 \makeatletter
 \hypersetup{
-     	%pagebackref=true,
-		pdftitle={\@title}, 
-		pdfauthor={\@author},
-    	pdfsubject={Modelo de artigo científico com abnTeX2},
-	    pdfcreator={LaTeX with abnTeX2},
-		pdfkeywords={abnt}{latex}{abntex}{abntex2}{atigo científico}, 
-		colorlinks=true,       		% false: boxed links; true: colored links
-    	linkcolor=blue,          	% color of internal links
-    	citecolor=blue,        		% color of links to bibliography
-    	filecolor=magenta,      		% color of file links
-		urlcolor=blue,
-		bookmarksdepth=4
+%pagebackref=true,
+pdftitle={\@title},
+pdfauthor={\@author},
+pdfsubject={Tópicos de Pesquisa Sobre Narrativas Transmídia em Computação},
+pdfcreator={LaTeX with abnTeX2},
+pdfkeywords={abnt}{latex}{abntex}{abntex2}{artigo científico},
+colorlinks=true,       		% false: boxed links; true: colored links
+linkcolor=blue,          	% color of internal links
+citecolor=blue,        		% color of links to bibliography
+filecolor=magenta,      		% color of file links
+urlcolor=blue,
+bookmarksdepth=4
 }
 \makeatother
-% --- 
+% ---
 
 % ---
 % compila o indice
@@ -142,9 +140,9 @@ Araujo\thanks{laurocesar@laurocesar.com}}
 \checkandfixthelayout
 % ---
 
-% --- 
-% Espaçamentos entre linhas e parágrafos 
-% --- 
+% ---
+% Espaçamentos entre linhas e parágrafos
+% ---
 
 % O tamanho do parágrafo é dado por:
 \setlength{\parindent}{1.3cm}
@@ -160,328 +158,252 @@ Araujo\thanks{laurocesar@laurocesar.com}}
 % ----
 \begin{document}
 
-% Seleciona o idioma do documento (conforme pacotes do babel)
-%\selectlanguage{english}
-\selectlanguage{brazil}
+  % Seleciona o idioma do documento (conforme pacotes do babel)
+  %\selectlanguage{english}
+  \selectlanguage{brazil}
 
-% Retira espaço extra obsoleto entre as frases.
-\frenchspacing 
+  % Retira espaço extra obsoleto entre as frases.
+  \frenchspacing
 
-% ----------------------------------------------------------
-% ELEMENTOS PRÉ-TEXTUAIS
-% ----------------------------------------------------------
+  % ----------------------------------------------------------
+  % ELEMENTOS PRÉ-TEXTUAIS
+  % ----------------------------------------------------------
 
-%---
-%
-% Se desejar escrever o artigo em duas colunas, descomente a linha abaixo
-% e a linha com o texto ``FIM DE ARTIGO EM DUAS COLUNAS''.
-% \twocolumn[    		% INICIO DE ARTIGO EM DUAS COLUNAS
-%
-%---
-% página de titulo
-\maketitle
+  %---
+  %
+  % Se desejar escrever o artigo em duas colunas, descomente a linha abaixo
+  % e a linha com o texto ``FIM DE ARTIGO EM DUAS COLUNAS''.
+  % \twocolumn[    		% INICIO DE ARTIGO EM DUAS COLUNAS
+  %
+  %---
+  % página de titulo
+  \maketitle
 
-% resumo em português
-\begin{resumoumacoluna}
- Conforme a ABNT NBR 6022:2003, o resumo é elemento obrigatório, constituído de
- uma sequência de frases concisas e objetivas e não de uma simples enumeração
- de tópicos, não ultrapassando 250 palavras, seguido, logo abaixo, das palavras
- representativas do conteúdo do trabalho, isto é, palavras-chave e/ou
- descritores, conforme a NBR 6028. (\ldots) As palavras-chave devem figurar logo
- abaixo do resumo, antecedidas da expressão Palavras-chave:, separadas entre si por
- ponto e finalizadas também por ponto.
- 
- \vspace{\onelineskip}
- 
- \noindent
- \textbf{Palavras-chave}: latex. abntex. editoração de texto.
-\end{resumoumacoluna}
+  % resumo em português
+  \begin{resumoumacoluna}
+    Esse estudo revisa a literatura de publicações científicas sobre narrativas transmídia em Computação a fim de (a) identificar os tópicos mais pesquisados e (b) as áreas de aplicação mais estudadas, a fim de contribuir para a visualização e melhor entendimento do atual estado da arte das pesquisas em narrativas transmídia. Os artigos revisados sugerem que \textsf{RESUMIR A DISCUSSÃO E CONCLUSÃO AQUI} (\ldots) Alguma coisa a mais aqui no resumo.
 
-% ]  				% FIM DE ARTIGO EM DUAS COLUNAS
-% ---
+    \vspace{\onelineskip}
 
-% ----------------------------------------------------------
-% ELEMENTOS TEXTUAIS
-% ----------------------------------------------------------
-\textual
+    \noindent
+    \textbf{Palavras-chave}: narrativa transmídia. transmídia. revisão sistemática.
+  \end{resumoumacoluna}
 
-% ----------------------------------------------------------
-% Introdução
-% ----------------------------------------------------------
-\section*{Introdução}
-\addcontentsline{toc}{section}{Introdução}
+  % ]  				% FIM DE ARTIGO EM DUAS COLUNAS
+  % ---
 
-Este documento e seu código-fonte são exemplos de referência de uso da classe
-\textsf{abntex2} e do pacote \textsf{abntex2cite}. O documento exemplifica a
-elaboração de publicação periódica científica impressa produzida conforme a ABNT
-NBR 6022:2003 \emph{Informação e documentação - Artigo em publicação periódica
-científica impressa - Apresentação}.
+  % ----------------------------------------------------------
+  % ELEMENTOS TEXTUAIS
+  % ----------------------------------------------------------
+  \textual
 
-A expressão ``Modelo canônico'' é utilizada para indicar que \abnTeX\ não é
-modelo específico de nenhuma universidade ou instituição, mas que implementa tão
-somente os requisitos das normas da ABNT. Uma lista completa das normas
-observadas pelo \abnTeX\ é apresentada em \citeonline{abntex2classe}.
+  % ----------------------------------------------------------
+  % Introdução
+  % ----------------------------------------------------------
+  \section{Introdução}
 
-Sinta-se convidado a participar do projeto \abnTeX! Acesse o site do projeto em
-\url{http://www.abntex.net.br/}. Também fique livre para conhecer,
-estudar, alterar e redistribuir o trabalho do \abnTeX, desde que os arquivos
-modificados tenham seus nomes alterados e que os créditos sejam dados aos
-autores originais, nos termos da ``The \LaTeX\ Project Public
-License''\footnote{\url{http://www.latex-project.org/lppl.txt}}.
+  Com o uso massivo da \emph{Internet} a partir da década de 1990, iniciou-se um processo de narrar histórias e entreter audiências através de múltiplas plataformas. (\ldots) O que é narrativa transmídia (\ldots)
 
-Encorajamos que sejam realizadas customizações específicas deste documento.
-Porém, recomendamos que ao invés de se alterar diretamente os arquivos do
-\abnTeX, distribua-se arquivos com as respectivas customizações. Isso permite
-que futuras versões do \abnTeX~não se tornem automaticamente incompatíveis com
-as customizações promovidas. Consulte \citeonline{abntex2-wiki-como-customizar}
-par mais informações.
+  A discussão central a ser desenvolvida nesse estudo é possibilitar melhores visualização e entendimento do atual estado da arte das pesquisas em narrativas transmídia.  O objetivo dsse estudo é conduzir uma revisão sistemática acerca de narrativas transmídia em Computação a fim de:
 
-Este exemplo deve ser utilizado como complemento do manual da classe
-\textsf{abntex2} \cite{abntex2classe}, dos manuais do pacote
-\textsf{abntex2cite} \cite{abntex2cite,abntex2cite-alf} e do manual da classe
-\textsf{memoir} \cite{memoir}. Consulte o \citeonline{abntex2modelo} para obter
-exemplos e informações adicionais de uso de \abnTeX\ e de \LaTeX.
+  (a) identificar os tópicos mais pesquisados em narrativas transmídias,
 
-% ----------------------------------------------------------
-% Seção de explicações
-% ----------------------------------------------------------
-\section{Exemplos de comandos}
+  (b) identificar as áreas de aplicação mais estudadas,
 
-\subsection{Margens}
+  (c) \textsf{(a definir)} definir perspectivas de futuras pesquisas em narrativas transmídias.
 
-A norma ABNT NBR 6022:2003 não estabelece uma margem específica a ser utilizada
-no artigo científico. Dessa maneira, caso deseje alterar as margens, utilize os
-comandos abaixo:
+  \section{Métodos}
 
-\begin{verbatim}
-   \setlrmarginsandblock{3cm}{3cm}{*}
-   \setulmarginsandblock{3cm}{3cm}{*}
-   \checkandfixthelayout
-\end{verbatim}
+  \textsf{(definir revisão sistemática, suas etapas e o que foi realizado em cada uma)}
 
-\subsection{Duas colunas}
+  Uma revisão sistemática é um método que possibilita a avaliação e interpretação de toda a pesquisa relevante acessível para uma ou mais questões de pesquisa ou evento de interesse. Para essa revisão, seguiu-se um processo definido para a condução de revisões sistemáticas proposto por \citeonline{kit_cha_2007}.
 
-É comum que artigos científicos sejam escritos em duas colunas. Para isso,
-adicione a opção \texttt{twocolumn} à classe do documento, como no exemplo:
+  (\ldots)
 
-\begin{verbatim}
-   \documentclass[article,11pt,oneside,a4paper,twocolumn]{abntex2}
-\end{verbatim}
+  \emph{Questão 1: Quais tópicos são mais pesquisados sobre narrativas transmídias?}
 
-É possível indicar pontos do texto que se deseja manter em apenas uma coluna,
-geralmente o título e os resumos. Os resumos em única coluna em documentos com
-a opção \texttt{twocolumn} devem ser escritos no ambiente
-\texttt{resumoumacoluna}:
+  \emph{Questão 2: Quais os objetivos mais apresentados?}
 
-\begin{verbatim}
-   \twocolumn[              % INICIO DE ARTIGO EM DUAS COLUNAS
+  \emph{Questão 3: Que perspectiva de pesquisas futuras se pode inferir sobre narrativas transmídia?}
 
-     \maketitle             % pagina de titulo
+  (\ldots)
 
-     \renewcommand{\resumoname}{Nome do resumo}
-     \begin{resumoumacoluna}
-        Texto do resumo.
-      
-        \vspace{\onelineskip}
- 
-        \noindent
-        \textbf{Palavras-chave}: latex. abntex. editoração de texto.
-     \end{resumoumacoluna}
-   
-   ]                        % FIM DE ARTIGO EM DUAS COLUNAS
-\end{verbatim}
+  \autoref{tab-topicos-objetivos}
+  \begin{table}[htb]
+    \ABNTEXfontereduzida
+    \caption[Tópicos e objetivos]{Tópicos e objetivos.}
+    \label{tab-topicos-objetivos}
+    \begin{tabular}{p{5.0cm}|p{4.1cm}|p{4.0cm}}
+      %\hline
+      \textbf{Artigo trata de} & \textbf{Para} &  \\
+      \hline
+      Conceitos \newline Processos \newline Ferramentas \newline Estudo de caso & Planejar \newline Implementar \newline Analisar \newline Adaptar & Narrativas transmídia \\
+      % \hline
+    \end{tabular}
+    \legend{Fonte: Produzido pelos autores.}
+  \end{table}
 
-\subsection{Recuo do ambiente \texttt{citacao}}
+  A \autoref{tab-queries2} apresenta as \textit{strings} de busca utilizadas em cada fonte de pesquisa.
 
-Na produção de artigos (opção \texttt{article}), pode ser útil alterar o recuo
-do ambiente \texttt{citacao}. Nesse caso, utilize o comando:
+  \begin{table}[htb]
+    \ABNTEXfontereduzida
+    \caption[\textit{Strings} de busca]{\textit{Strings} de busca.}
+    \label{tab-queries2}
+    \begin{tabular}{p{2.0cm}|p{9.3cm}|p{2.8cm}}
+      %\hline
+      \textbf{Fonte} & \textbf{\textit{String} de busca} & \textbf{Nota} \\
+      \hline
+      ACM & Title:((narrativ* OR storytelling OR ``digital storytelling'') AND (``second screen'' OR multiscreen OR interactive OR transmedia OR crossmedia OR ``cross media'')) OR Abstract:((narrativ* OR storytelling OR ``digital storytelling'') AND (``second screen'' OR multiscreen OR interactive OR transmedia OR crossmedia OR ``cross media'')) & Busca em ``Advanced Search'', filtro de data (2009 a 2015) adicionado manualmente \\
+      \hline
+      IEEE & (narrativ* OR storytelling OR ``digital storytelling'') AND (``second screen'' OR multiscreen OR interactive OR transmedia OR crossmedia OR ``cross media'') & Busca em ``Command Search'', filtro de data adicionado manualmente \\
+      \hline
+      ScienceDirect & pub-date > 2008 and tak((narrativ* OR storytelling OR ``digital storytelling'') AND (``second screen'' OR multiscreen OR interactive OR transmedia OR crossmedia OR ``cross media'')) [All Sources(Computer Science,Engineering)]) & Busca em ``Advanced search'', filtros ``pub-date'' e ``All Sources'' adicionados manualmente \\
+      \hline
+      Scopus & TITLE-ABS ( ( narrativ*  OR  storytelling  OR  ``digital storytelling'' )  AND  ( ``second screen''  OR  multiscreen  OR  interactive  OR  transmedia  OR  crossmedia  OR  ``cross media'' ) )  AND  ( LIMIT-TO ( SUBJAREA ,  ``COMP'' )  OR  LIMIT-TO ( SUBJAREA ,  ``ENGI'' ) )  AND  ( LIMIT-TO ( PUBYEAR ,  2016 )  OR  LIMIT-TO ( PUBYEAR ,  2015 )  OR  LIMIT-TO ( PUBYEAR ,  2014 )  OR  LIMIT-TO ( PUBYEAR ,  2013 )  OR  LIMIT-TO ( PUBYEAR ,  2012 )  OR  LIMIT-TO ( PUBYEAR ,  2011 )  OR  LIMIT-TO ( PUBYEAR ,  2010 )  OR  LIMIT-TO ( PUBYEAR ,  2009 ) ) & Busca em ``Advanced search'', filtros ``LIMIT-TO'' adicionados manualmente \\
+      % \hline
+    \end{tabular}
+    \legend{Fonte: Produzido pelos autores.}
+  \end{table}
 
-\begin{verbatim}
-   \setlength{\ABNTEXcitacaorecuo}{1.8cm}
-\end{verbatim}
+  \section{Resultados}
 
-Quando um documento é produzido com a opção \texttt{twocolumn}, a classe
-\textsf{abntex2} automaticamente altera o recuo padrão de 4 cm, definido pela
-ABNT NBR 10520:2002 seção 5.3, para 1.8 cm.
+  A \autoref{fig_sourcespdf} representa as fontes pesquisadas (\ldots)
 
-\section{Cabeçalhos e rodapés customizados}
+  Do universo de 1432 trabalhos obtidos nas fontes, 232 foram selecionados e 99 extraídos, como mostrado na \autoref{fig_extractionpdf} (\ldots)
 
-Diferentes estilos de cabeçalhos e rodapés podem ser criados usando os
-recursos padrões do \textsf{memoir}.
+  A \autoref{fig_extraction-accepted-paperspdf} apresenta as categorias dos artigos aceitos na etapa de extração (\ldots)
 
-Um estilo próprio de cabeçalhos e rodapés pode ser diferente para páginas pares
-e ímpares. Observe que a diferenciação entre páginas pares e ímpares só é
-utilizada se a opção \texttt{twoside} da classe \textsf{abntex2} for utilizado.
-Caso contrário, apenas o cabeçalho padrão da página par (\emph{even}) é usado.
+  \begin{figure}[htb]
+    \caption{\label{fig_sourcespdf}Fontes de pesquisa}
+    \begin{center}
+      \includegraphics[scale=0.5]{images/sources.pdf}
+    \end{center}
+    \legend{Fonte: Ferramenta STARt}
+  \end{figure}
 
-Veja o exemplo abaixo cria um estilo chamado \texttt{meuestilo}. O código deve
-ser inserido no preâmbulo do documento.
+  \begin{figure}[htb]
+    \caption{\label{fig_extractionpdf}Etapa de Extração}
+    \begin{center}
+      \includegraphics[scale=0.5]{images/extraction.pdf}
+    \end{center}
+    \legend{Fonte: Ferramenta STARt}
+  \end{figure}
 
-\begin{verbatim}
-%%criar um novo estilo de cabeçalhos e rodapés
-\makepagestyle{meuestilo}
-  %%cabeçalhos
-  \makeevenhead{meuestilo} %%pagina par
-     {topo par à esquerda}
-     {centro \thepage}
-     {direita}
-  \makeoddhead{meuestilo} %%pagina ímpar ou com oneside
-     {topo ímpar/oneside à esquerda}
-     {centro\thepage}
-     {direita}
-  \makeheadrule{meuestilo}{\textwidth}{\normalrulethickness} %linha
-  %% rodapé
-  \makeevenfoot{meuestilo}
-     {rodapé par à esquerda} %%pagina par
-     {centro \thepage}
-     {direita} 
-  \makeoddfoot{meuestilo} %%pagina ímpar ou com oneside
-     {rodapé ímpar/onside à esquerda}
-     {centro \thepage}
-     {direita}
-\end{verbatim}
+  \begin{figure}[htb]
+    \caption{\label{fig_extraction-accepted-paperspdf}Critérios dos trabalhos aceitos}
+    \begin{center}
+      \includegraphics[scale=0.5]{images/extraction-accepted-papers.pdf}
+    \end{center}
+    \legend{Fonte: Ferramenta STARt}
+  \end{figure}
 
-Para usar o estilo criado, use o comando abaixo imediatamente após um dos
-comandos de divisão do documento. Por exemplo:
 
-\begin{verbatim}
-   \begin{document}
-     %%usar o estilo criado na primeira página do artigo:
-     \pretextual
-     \pagestyle{meuestilo}
-     
-     \maketitle
-     ...
-     
-     %%usar o estilo criado nas páginas textuais
-     \textual
-     \pagestyle{meuestilo}
-     
-     \chapter{Novo capítulo}
-     ...
-   \end{document}  
-\end{verbatim}
-   
-Outras informações sobre cabeçalhos e rodapés estão disponíveis na seção 7.3 do
-manual do \textsf{memoir} \cite{memoir}.
+  \section{Discussão}
 
-\section{Mais exemplos no Modelo Canônico de Trabalhos Acadêmicos}
+  A \autoref{fig_anoXpublicacoesjpg} mostra a frequência de publicações de 2009 a 2015 (\ldots)
 
-Este modelo de artigo é limitado em número de exemplos de comandos, pois são
-apresentados exclusivamente comandos diretamente relacionados com a produção de
-artigos.
+  \begin{figure}[htb]
+    \caption{\label{fig_anoXpublicacoesjpg}Ano x Publicações}
+    \begin{center}
+      \includegraphics[scale=0.5]{images/anoXpublicacoes.jpg}
+    \end{center}
+    \legend{Fonte: Produzido pelos autores}
+  \end{figure}
 
-Para exemplos adicionais de \abnTeX\ e \LaTeX, como inclusão de figuras,
-fórmulas matemáticas, citações, e outros, consulte o documento
-\citeonline{abntex2modelo}.
 
-\section{Consulte o manual da classe \textsf{abntex2}}
 
-Consulte o manual da classe \textsf{abntex2} \cite{abntex2classe} para uma
-referência completa das macros e ambientes disponíveis.
+  \section{Conclusão}
 
-% ---
-% Finaliza a parte no bookmark do PDF, para que se inicie o bookmark na raiz
-% ---
-\bookmarksetup{startatroot}% 
-% ---
+  \section{Referências}
+  \addcontentsline{toc}{section}{Referências}
 
-% ---
-% Conclusão
-% ---
-\section*{Considerações finais}
-\addcontentsline{toc}{section}{Considerações finais}
+  % ---
+  % Finaliza a parte no bookmark do PDF, para que se inicie o bookmark na raiz
+  % ---
+  \bookmarksetup{startatroot}%
+  % ---
 
-\lipsum[1]
+  % ----------------------------------------------------------
+  % ELEMENTOS PÓS-TEXTUAIS
+  % ----------------------------------------------------------
+  \postextual
 
-\begin{citacao}
-\lipsum[2]
-\end{citacao}
+  % ---
+  % Título e resumo em língua estrangeira
+  % ---
 
-\lipsum[3]
+  % \twocolumn[    		% INICIO DE ARTIGO EM DUAS COLUNAS
 
-% ----------------------------------------------------------
-% ELEMENTOS PÓS-TEXTUAIS
-% ----------------------------------------------------------
-\postextual
+  % titulo em inglês
+  \titulo{Research topics on transmedia storytelling}
+  \emptythanks
+  \maketitle
 
-% ---
-% Título e resumo em língua estrangeira
-% ---
+  % resumo em português
+  \renewcommand{\resumoname}{Abstract}
+  \begin{resumoumacoluna}
+    \begin{otherlanguage*}{english}
+      This paper discuss a systematic review on research topics in transmedia storytelling. The chosen sources were: ACM, IEEE, ScienceDirect, Scopus
 
-% \twocolumn[    		% INICIO DE ARTIGO EM DUAS COLUNAS
+      \vspace{\onelineskip}
 
-% titulo em inglês
-\titulo{Canonical academic article model with \abnTeX}
-\emptythanks
-\maketitle
+      \noindent
+      \textbf{Keywords}: latex. abntex.
+    \end{otherlanguage*}
+  \end{resumoumacoluna}
 
-% resumo em português
-\renewcommand{\resumoname}{Abstract}
-\begin{resumoumacoluna}
- \begin{otherlanguage*}{english}
-   According to ABNT NBR 6022:2003, an abstract in foreign language is a back
-   matter mandatory element.
+  % ]  				% FIM DE ARTIGO EM DUAS COLUNAS
+  % ---
 
-   \vspace{\onelineskip}
- 
-   \noindent
-   \textbf{Keywords}: latex. abntex.
- \end{otherlanguage*}  
-\end{resumoumacoluna}
+  % ----------------------------------------------------------
+  % Referências bibliográficas
+  % ----------------------------------------------------------
+  \bibliography{mono}
 
-% ]  				% FIM DE ARTIGO EM DUAS COLUNAS
-% ---
+  % ----------------------------------------------------------
+  % Glossário
+  % ----------------------------------------------------------
+  %
+  % Há diversas soluções prontas para glossário em LaTeX.
+  % Consulte o manual do abnTeX2 para obter sugestões.
+  %
+  %\glossary
 
-% ----------------------------------------------------------
-% Referências bibliográficas
-% ----------------------------------------------------------
-\bibliography{abntex2-modelo-references}
+  % ----------------------------------------------------------
+  % Apêndices
+  % ----------------------------------------------------------
 
-% ----------------------------------------------------------
-% Glossário
-% ----------------------------------------------------------
-%
-% Há diversas soluções prontas para glossário em LaTeX. 
-% Consulte o manual do abnTeX2 para obter sugestões.
-%
-%\glossary
+  % ---
+  % Inicia os apêndices
+  % ---
+  \begin{apendicesenv}
 
-% ----------------------------------------------------------
-% Apêndices
-% ----------------------------------------------------------
+    % ----------------------------------------------------------
+    \chapter{Nullam elementum urna vel imperdiet sodales elit ipsum pharetra ligula
+    ac pretium ante justo a nulla curabitur tristique arcu eu metus}
+    % ----------------------------------------------------------
+    \lipsum[55-57]
 
-% ---
-% Inicia os apêndices
-% ---
-\begin{apendicesenv}
+  \end{apendicesenv}
+  % ---
 
-% ----------------------------------------------------------
-\chapter{Nullam elementum urna vel imperdiet sodales elit ipsum pharetra ligula
-ac pretium ante justo a nulla curabitur tristique arcu eu metus}
-% ----------------------------------------------------------
-\lipsum[55-57]
+  % ----------------------------------------------------------
+  % Anexos
+  % ----------------------------------------------------------
+  \cftinserthook{toc}{AAA}
+  % ---
+  % Inicia os anexos
+  % ---
+  %\anexos
+  \begin{anexosenv}
 
-\end{apendicesenv}
-% ---
+    % ---
+    \chapter{Cras non urna sed feugiat cum sociis natoque penatibus et magnis dis
+    parturient montes nascetur ridiculus mus}
+    % ---
 
-% ----------------------------------------------------------
-% Anexos
-% ----------------------------------------------------------
-\cftinserthook{toc}{AAA}
-% ---
-% Inicia os anexos
-% ---
-%\anexos
-\begin{anexosenv}
+    \lipsum[31]
 
-% ---
-\chapter{Cras non urna sed feugiat cum sociis natoque penatibus et magnis dis
-parturient montes nascetur ridiculus mus}
-% ---
-
-\lipsum[31]
-
-\end{anexosenv}
+  \end{anexosenv}
 
 \end{document}
