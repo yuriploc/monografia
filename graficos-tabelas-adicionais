@@ -1,15 +1,19 @@
-A \autoref{tab-topicos-objetivos} apresenta as informações a serem extraídas,
+A \autoref{tab-sincronismo} apresenta o sincronismo.
 
 \begin{table}[htb]
   \ABNTEXfontereduzida
-  \caption[Informações para extração]{Informações para extração.}
-  \label{tab-topicos-objetivos}
-  \begin{tabular}{p{5.0cm}|p{4.1cm}|p{4.0cm}}
-    %\hline
-    \textbf{Artigo trata de} & \textbf{Para} &  \\
-    \hline
-    Conceitos \newline Processos \newline Ferramentas \newline Estudo de caso & Planejar \newline Implementar \newline Analisar \newline Adaptar & Narrativas transmídia \\
-    % \hline
-  \end{tabular}
+  \caption[Sincronismo x Objetivos]{Sincronismo x Objetivos.}
+  \label{tab-sincronismo}
+  \begin{center}
+    \begin{tabular}{p{3.0cm}|p{2.0cm}|p{.5cm}}
+      %\hline
+      \textbf{Artigo apresenta} & \textbf{Para} & \\
+      \hline
+      Sincronismo & Planejar \newline Implementar \newline Analisar \newline Adaptar & 0 \newline 0 \newline 0 \newline 1 \\
+      \hline
+      \textbf{Total} & & \textbf{1} \\
+      % \hline
+    \end{tabular}
+  \end{center}
   \legend{Fonte: Produzido pelos autores.}
 \end{table}
