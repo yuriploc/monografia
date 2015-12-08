@@ -1,0 +1,39 @@
+A \autoref{fig_sourcespdf} representa as fontes pesquisadas (\ldots)
+
+\begin{figure}[htb]
+  \caption{\label{fig_sourcespdf}Fontes de pesquisa}
+  \begin{center}
+    \includegraphics[scale=0.5]{images/sources.pdf}
+  \end{center}
+  \legend{Fonte: Ferramenta STARt}
+\end{figure}
+
+A \autoref{fig_extraction-accepted-paperspdf} apresenta as categorias dos artigos aceitos na etapa de extração (\ldots)
+
+\begin{figure}[htb]
+  \caption{\label{fig_extraction-accepted-paperspdf}Critérios dos trabalhos aceitos}
+  \begin{center}
+    \includegraphics[scale=0.5]{images/extraction-accepted-papers.pdf}
+  \end{center}
+  \legend{Fonte: Ferramenta STARt}
+\end{figure}
+
+Do universo de 1432 trabalhos obtidos nas fontes, 232 foram selecionados e 99 extraídos, como mostrado na \autoref{fig_extractionpdf} (\ldots)
+
+\begin{figure}[htb]
+\caption{\label{fig_extractionpdf}Etapa de Extração}
+\begin{center}
+  \includegraphics[scale=0.5]{images/extraction.pdf}
+\end{center}
+\legend{Fonte: Ferramenta STARt}
+\end{figure}
+
+A \autoref{fig_anoXpublicacoesjpg} mostra a frequência de publicações de 2009 a 2015 (\ldots)
+
+\begin{figure}[htb]
+  \caption{\label{fig_anoXpublicacoesjpg}Ano x Publicações}
+  \begin{center}
+    \includegraphics[scale=0.5]{images/anoXpublicacoes.jpg}
+  \end{center}
+  \legend{Fonte: Produzido pelos autores}
+\end{figure}

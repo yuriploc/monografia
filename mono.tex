@@ -186,13 +186,13 @@ bookmarksdepth=4
 
   Com o uso massivo da \textit{Internet} a partir da década de 1990, iniciou-se um processo de narrar histórias e entreter audiências através de múltiplas plataformas. (\ldots) O que é narrativa transmídia (\ldots)
 
-  A discussão central a ser desenvolvida nesse estudo é possibilitar melhores visualização e entendimento do atual estado da arte das pesquisas em narrativas transmídia.  O objetivo dsse estudo é conduzir uma revisão sistemática acerca de narrativas transmídia em Computação a fim de:
+  A discussão central a ser desenvolvida nesse estudo é possibilitar melhor visualização e entendimento do atual estado da arte das pesquisas em narrativas transmídia.  O objetivo desse estudo é conduzir uma revisão sistemática acerca de narrativas transmídia em Computação a fim de:
 
   (a) identificar os tópicos mais pesquisados em narrativas transmídias,
 
   (b) identificar as áreas de aplicação mais estudadas,
 
-  (c) \textsf{(a definir)} definir perspectivas de futuras pesquisas em narrativas transmídias.
+  (c) classificar as pesquisas em narrativas transmídias com base nos tópicos e áreas de aplicação.
 
   \section{Métodos}
 
@@ -264,6 +264,23 @@ bookmarksdepth=4
     \legend{Fonte: Produzido pelos autores.}
   \end{table}
 
+  A \autoref{tab-article-selection} resume a etapa de seleção.
+
+  \begin{table}[htb]
+    \ABNTEXfontereduzida
+    \caption[Informações para extração]{Informações para extração.}
+    \label{tab-article-selection}
+    \begin{tabular}{p{5.0cm}|p{4.1cm}|p{4.0cm}}
+      %\hline
+      \textbf{Artigo trata de} & \textbf{Para} &  \\
+      \hline
+      Conceitos \newline Processos \newline Ferramentas \newline Estudo de caso & Planejar \newline Implementar \newline Analisar \newline Adaptar & Narrativas transmídia \\
+      % \hline
+    \end{tabular}
+    \legend{Fonte: Produzido pelos autores.}
+  \end{table}
+
+  \section{Resultados}
   A \autoref{tab-topicos-objetivos} apresenta as informações a serem extraídas.
 
   \begin{table}[htb]
@@ -280,21 +297,7 @@ bookmarksdepth=4
     \legend{Fonte: Produzido pelos autores.}
   \end{table}
 
-  \section{Resultados}
-
-  A \autoref{fig_sourcespdf} representa as fontes pesquisadas (\ldots)
-
-  Do universo de 1432 trabalhos obtidos nas fontes, 232 foram selecionados e 99 extraídos, como mostrado na \autoref{fig_extractionpdf} (\ldots)
-
-  A \autoref{fig_extraction-accepted-paperspdf} apresenta as categorias dos artigos aceitos na etapa de extração (\ldots)
-
-  \begin{figure}[htb]
-    \caption{\label{fig_sourcespdf}Fontes de pesquisa}
-    \begin{center}
-      \includegraphics[scale=0.5]{images/sources.pdf}
-    \end{center}
-    \legend{Fonte: Ferramenta STARt}
-  \end{figure}
+    Do universo de 1432 trabalhos obtidos nas fontes, 232 foram selecionados e 99 extraídos, como mostrado na \autoref{fig_extractionpdf} (\ldots)
 
   \begin{figure}[htb]
     \caption{\label{fig_extractionpdf}Etapa de Extração}
@@ -304,27 +307,9 @@ bookmarksdepth=4
     \legend{Fonte: Ferramenta STARt}
   \end{figure}
 
-  \begin{figure}[htb]
-    \caption{\label{fig_extraction-accepted-paperspdf}Critérios dos trabalhos aceitos}
-    \begin{center}
-      \includegraphics[scale=0.5]{images/extraction-accepted-papers.pdf}
-    \end{center}
-    \legend{Fonte: Ferramenta STARt}
-  \end{figure}
 
 
   \section{Discussão}
-
-  A \autoref{fig_anoXpublicacoesjpg} mostra a frequência de publicações de 2009 a 2015 (\ldots)
-
-  \begin{figure}[htb]
-    \caption{\label{fig_anoXpublicacoesjpg}Ano x Publicações}
-    \begin{center}
-      \includegraphics[scale=0.5]{images/anoXpublicacoes.jpg}
-    \end{center}
-    \legend{Fonte: Produzido pelos autores}
-  \end{figure}
-
 
 
   \section{Conclusão}
@@ -371,51 +356,5 @@ bookmarksdepth=4
   % Referências bibliográficas
   % ----------------------------------------------------------
   \bibliography{mono}
-
-  % ----------------------------------------------------------
-  % Glossário
-  % ----------------------------------------------------------
-  %
-  % Há diversas soluções prontas para glossário em LaTeX.
-  % Consulte o manual do abnTeX2 para obter sugestões.
-  %
-  %\glossary
-
-  % ----------------------------------------------------------
-  % Apêndices
-  % ----------------------------------------------------------
-
-  % ---
-  % Inicia os apêndices
-  % ---
-  \begin{apendicesenv}
-
-    % ----------------------------------------------------------
-    \chapter{Nullam elementum urna vel imperdiet sodales elit ipsum pharetra ligula
-    ac pretium ante justo a nulla curabitur tristique arcu eu metus}
-    % ----------------------------------------------------------
-    \lipsum[55-57]
-
-  \end{apendicesenv}
-  % ---
-
-  % ----------------------------------------------------------
-  % Anexos
-  % ----------------------------------------------------------
-  \cftinserthook{toc}{AAA}
-  % ---
-  % Inicia os anexos
-  % ---
-  %\anexos
-  \begin{anexosenv}
-
-    % ---
-    \chapter{Cras non urna sed feugiat cum sociis natoque penatibus et magnis dis
-    parturient montes nascetur ridiculus mus}
-    % ---
-
-    \lipsum[31]
-
-  \end{anexosenv}
 
 \end{document}
