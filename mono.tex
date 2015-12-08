@@ -45,6 +45,10 @@ sumario=tradicional
 % ---
 
 % ---
+% Pacotes de diagrama
+% ---
+\usepackage{smartdiagram}
+% ---
 % Pacotes adicionais, usados apenas no âmbito do Modelo Canônico do abnteX2
 % ---
 \usepackage{lipsum}				% para geração de dummy text
@@ -226,23 +230,7 @@ bookmarksdepth=4
 
   (\ldots)
 
-  Critérios de inclusão (I) e de exclusão (E):
-
-  (E) Não está relacionado ao tema narrativas transmídia
-
-  (E) O resumo do artigo não esclarece o aspecto transmídia desenvolvido no trabalho
-
-  (I) Trata de conceitos
-
-  (I) Trata de processos
-
-  (I) Trata de ferramentas
-
-  (I) Trata de sincronismo de dados
-
-  (I) Estudo de caso
-
-  A \autoref{tab-queries2} apresenta as \textit{strings} de busca utilizadas em cada fonte de pesquisa.
+  A \textit{string} de busca utilizada foi: ((narrativ* OR storytelling OR ``digital storytelling'') AND (``second screen'' OR multiscreen OR interactive OR transmedia OR crossmedia OR ``cross media'')). A \autoref{tab-queries2} apresenta o protocolo utilizado em cada base de dados.
 
   \begin{table}[htb]
     \ABNTEXfontereduzida
@@ -264,50 +252,57 @@ bookmarksdepth=4
     \legend{Fonte: Produzido pelos autores.}
   \end{table}
 
+  Critérios de inclusão (I) e de exclusão (E):
+
+  (E) Não está relacionado ao tema narrativas transmídia
+
+  (E) O resumo do artigo não esclarece o aspecto transmídia desenvolvido no trabalho
+
+  (I) Trata de conceitos
+
+  (I) Trata de processos
+
+  (I) Trata de ferramentas
+
+  (I) Trata de sincronismo de dados
+
+  (I) Estudo de caso
+
   A \autoref{tab-article-selection} resume a etapa de seleção.
 
   \begin{table}[htb]
     \ABNTEXfontereduzida
-    \caption[Informações para extração]{Informações para extração.}
+    \caption[Etapa de seleção]{Etapa de seleção.}
     \label{tab-article-selection}
-    \begin{tabular}{p{5.0cm}|p{4.1cm}|p{4.0cm}}
+    \begin{tabular}{p{3.0cm}|p{2.0cm}|p{1.0cm}|p{1.0cm}|p{1.0cm}|p{1.0cm}|p{1.0cm}|p{2.0cm}}
       %\hline
-      \textbf{Artigo trata de} & \textbf{Para} &  \\
+      \textbf{Fonte} & \textbf{Resultantes da busca} & \textbf{CI1} & \textbf{CI2} & \textbf{CI3} & \textbf{CI4} & \textbf{CI5} & \textbf{Selecionados}  \\
       \hline
-      Conceitos \newline Processos \newline Ferramentas \newline Estudo de caso & Planejar \newline Implementar \newline Analisar \newline Adaptar & Narrativas transmídia \\
+      ACM Digital Library & 240 & 9 & 4 & 6 & 1 & 12 & 32 \\
+      \hline
+      IEEE Xplore & 187 & 0 & 1 & 2 & 0 & 7 & 10 \\
+      \hline
+      ScienceDirect & 35 & 0 & 1 & 1 & 0 & 3 & 5 \\
+      \hline
+      Scopus & 970 & 12 & 4 & 4 & 0 & 30 & 50 \\
       % \hline
     \end{tabular}
     \legend{Fonte: Produzido pelos autores.}
   \end{table}
+
+  Comentários adicionais: na seleção: na extração: 97 aceitos, 19 com alta prioridade de leitura, 44 com prioridade
 
   \section{Resultados}
-  A \autoref{tab-topicos-objetivos} apresenta as informações a serem extraídas.
+  equanto a \autoref{diag-trata-de-para} ..
 
-  \begin{table}[htb]
-    \ABNTEXfontereduzida
-    \caption[Informações para extração]{Informações para extração.}
-    \label{tab-topicos-objetivos}
-    \begin{tabular}{p{5.0cm}|p{4.1cm}|p{4.0cm}}
-      %\hline
-      \textbf{Artigo trata de} & \textbf{Para} &  \\
-      \hline
-      Conceitos \newline Processos \newline Ferramentas \newline Estudo de caso & Planejar \newline Implementar \newline Analisar \newline Adaptar & Narrativas transmídia \\
-      % \hline
-    \end{tabular}
-    \legend{Fonte: Produzido pelos autores.}
-  \end{table}
-
-    Do universo de 1432 trabalhos obtidos nas fontes, 232 foram selecionados e 99 extraídos, como mostrado na \autoref{fig_extractionpdf} (\ldots)
-
-  \begin{figure}[htb]
-    \caption{\label{fig_extractionpdf}Etapa de Extração}
-    \begin{center}
-      \includegraphics[scale=0.5]{images/extraction.pdf}
-    \end{center}
-    \legend{Fonte: Ferramenta STARt}
-  \end{figure}
-
-
+\begin{figure}[htb]
+    \caption{\label{diag-trata-de-para}Categorias de classificação}
+  \begin{center}
+    \smartdiagramset{font=\scriptsize, module minimum width=2.5cm, uniform arrow color=true, module x sep=4.0cm, back arrow disabled, uniform color list=white for 3 items}
+    \smartdiagram[flow diagram:horizontal]{Conceitos \\ Processos \\ Ferramentas \\ Sincronismo de dados \\ Estudo de caso \\, Planejar \\ Implementar \\ Analisar \\ Adaptar, Narrativas transmídia} \\
+  \end{center}
+  \legend{Fonte: Produzido pelos autores}
+\end{figure}
 
   \section{Discussão}
 
