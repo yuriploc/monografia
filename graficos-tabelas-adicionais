@@ -17,3 +17,84 @@ A \autoref{tab-sincronismo} apresenta o sincronismo.
   \end{center}
   \legend{Fonte: Produzido pelos autores.}
 \end{table}
+
+
+  A \autoref{tab-conceitos} apresenta os conceitos.
+
+  \begin{table}[htb]
+    \ABNTEXfontereduzida
+    \caption[Conceitos x Objetivos]{Conceitos x Objetivos.}
+    \label{tab-conceitos}
+    \begin{center}
+      \begin{tabular}{p{3.0cm}|p{2.0cm}|p{.5cm}}
+        %\hline
+        \textbf{Artigo apresenta} & \textbf{Para} & \\
+        \hline
+        Conceitos & Planejar \newline Implementar \newline Analisar \newline Adaptar & 13 \newline 1 \newline 6 \newline 1 \\
+        \hline
+        \textbf{Total} & & \textbf{21} \\
+        % \hline
+      \end{tabular}
+    \end{center}
+    \legend{Fonte: Produzido pelos autores.}
+  \end{table}
+
+  A \autoref{tab-processos} apresenta os processos.
+
+  \begin{table}[htb]
+    \ABNTEXfontereduzida
+    \caption[Processos x Objetivos]{Processos x Objetivos.}
+    \label{tab-processos}
+    \begin{center}
+      \begin{tabular}{p{3.0cm}|p{2.0cm}|p{.5cm}}
+        %\hline
+        \textbf{Artigo apresenta} & \textbf{Para} & \\
+        \hline
+        Processos & Planejar \newline Implementar \newline Analisar \newline Adaptar & 2 \newline 5 \newline 2 \newline 1 \\
+        \hline
+        \textbf{Total} & & \textbf{10} \\
+        % \hline
+      \end{tabular}
+    \end{center}
+    \legend{Fonte: Produzido pelos autores.}
+  \end{table}
+
+  A \autoref{tab-ferramentas} apresenta as ferramentas.
+
+  \begin{table}[htb]
+    \ABNTEXfontereduzida
+    \caption[Ferramentas x Objetivos]{Ferramentas x Objetivos.}
+    \label{tab-ferramentas}
+    \begin{center}
+      \begin{tabular}{p{3.0cm}|p{2.0cm}|p{.5cm}}
+        %\hline
+        \textbf{Artigo apresenta} & \textbf{Para} & \\
+        \hline
+        Ferramentas & Planejar \newline Implementar \newline Analisar \newline Adaptar & 1 \newline 11 \newline 0 \newline 1 \\
+        \hline
+        \textbf{Total} & & \textbf{13} \\
+        % \hline
+      \end{tabular}
+    \end{center}
+    \legend{Fonte: Produzido pelos autores.}
+  \end{table}
+
+  A \autoref{tab-estudo} apresenta os estudos de caso.
+
+  \begin{table}[htb]
+    \ABNTEXfontereduzida
+    \caption[Estudos de caso x Objetivos]{Estudos de caso x Objetivos.}
+    \label{tab-estudo}
+    \begin{center}
+      \begin{tabular}{p{3.0cm}|p{2.0cm}|p{.5cm}}
+        %\hline
+        \textbf{Artigo apresenta} & \textbf{Para} & \\
+        \hline
+        Estudos de caso & Planejar \newline Implementar \newline Analisar \newline Adaptar & 4 \newline 35 \newline 6 \newline 7 \\
+        \hline
+        \textbf{Total} & & \textbf{52} \\
+        % \hline
+      \end{tabular}
+    \end{center}
+    \legend{Fonte: Produzido pelos autores.}
+  \end{table}
