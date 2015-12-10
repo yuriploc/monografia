@@ -1,5 +1,4 @@
-%% Produzido a partir de:
-%% abtex2-modelo-artigo.tex, v-1.9.5 laurocesar
+%% Modificado de: abtex2-modelo-artigo.tex, v-1.9.5 laurocesar
 %% Copyright 2012-2015 by abnTeX2 group at http://www.abntex.net.br/
 % ------------------------------------------------------------------------
 % ------------------------------------------------------------------------
@@ -81,7 +80,7 @@ Citado #1 vezes nas páginas #2.%
 % ---
 % Informações de dados para CAPA e FOLHA DE ROSTO
 % ---
-\titulo{Tópicos de pesquisa sobre narrativas transmídia em Computação}
+\titulo{Tópicos de pesquisa sobre narrativas transmídia em Computação: uma revisão sistemática}
 \autor{Yuri Soares de Oliveira\thanks{soaresyuri@gmail.com} \and Cidcley Teixeira de Souza\thanks{cidcley@ifce.edu.br}}
 \local{Fortaleza, Brasil}
 \data{Dezembro 2015}
@@ -167,7 +166,7 @@ bookmarksdepth=4
 
   % resumo em português
   \begin{resumoumacoluna}
-    Esse estudo revisa a literatura de publicações científicas sobre narrativas transmídia em Computação a fim de (a) identificar os tópicos mais pesquisados e (b) as áreas de aplicação mais estudadas, a fim de contribuir para a visualização e melhor entendimento do atual estado da arte das pesquisas em narrativas transmídia. Os artigos revisados sugerem que \textsf{RESUMIR A DISCUSSÃO E CONCLUSÃO AQUI} (\ldots) Alguma coisa a mais aqui no resumo.
+    Esse estudo revisa a literatura de publicações científicas sobre narrativas transmídia em Computação a fim de (a) identificar os tópicos e objetivos mais pesquisados em narrativas transmídias e (b) classificar as pesquisas em narrativas transmídias com base nos tópicos e objetivos encontrados a fim de contribuir para a visualização e melhor entendimento do atual estado da arte das pesquisas em narrativas transmídia. Os artigos revisados sugerem que \textsf{RESUMIR A DISCUSSÃO E CONCLUSÃO AQUI} (\ldots) Alguma coisa a mais aqui no resumo.
 
     \vspace{\onelineskip}
 
@@ -191,13 +190,13 @@ bookmarksdepth=4
   % O uso de ferramentas/frameworks/processos/conceitos para que a narrativa (storytelling) possa ser extendida (ampliada/explorada) a múltiplos suportes ou mídias, especialmente as digitais
   \section{Introdução}
 
-  A \textit{Internet} possibilita, além de conectar várias pessoas simultaneamente, agregar meios de comunicação, integrando-os e ampliando seu potencial. A convergência produzida através dessa agregação permitiu o surgimento de uma ``Renascença digital'', e com ela novas maneiras de se contar histórias através de meios diversos \cite{jenkins_2001}. Esse processo de reconfiguração da narrativa se deu de forma simultânea ao desenvolvimento das tecnologias de reprodução e armazenamento de dados, notadamente as plataformas de TV digital, de segunda tela e os jogos, através de Smarts TV, smartphones e tablets, consoles de \textit{videogame} e outros dispositivos.
+  A \textit{Internet} possibilita, além de conectar várias pessoas simultaneamente, agregar meios de comunicação, integrando-os e ampliando seu potencial. A convergência produzida por essa agregação permitiu o surgimento de uma ``Renascença digital'', e com ela novas maneiras de se contar histórias que se expandem por meios diversos \cite{jenkins_2001}. Esse processo de reconfiguração da narrativa se deu de forma simultânea ao desenvolvimento das tecnologias de reprodução e armazenamento de dados, notadamente as plataformas de TV digital, de segunda tela e os jogos, através de Smarts TV, smartphones, tablets, consoles de \textit{videogame} e outros dispositivos.
 
   Um dos conceitos mais presentes dessa ``Renascença digital'' é a narrativa transmídia, proposta como o processo de dispersar sistematicamente elementos de um enredo em múltiplas plataformas, permitindo que cada um contribua para o todo. Cada meio realiza sua função: as histórias em quadrinhos fornecem a história geral, os jogos permitem explorar o mundo criado e as séries de televisão oferecem desdobramentos narrativos diferentes, por exemplo \cite{jenkins_fastcompany_2011}.
 
   Com base no conceito anterior, \citeonline{scolari_2008} define narrativa transmídia como uma estrutura que se expande tanto em termos de linguagens (verbais, icônicas, textuais etc) quanto de mídias (televisão, rádio, celular, internet, jogos, quadrinhos e outros). As histórias se complementam em cada suporte e devem fazer sentido isoladamente, conforme propõe \citeonline{jenkins_2003}, apesar de que o termo ainda gera confusão. \citeonline{hanson_2004}, por exemplo, refere-se ao termo \textit{``screen bleed''} para nomear universos ficcionais que ultrapassam os limites de sua mídia, indo além dos limites da tela. \citeonline{dena_2004} cunhou o termo ``transficção''  para  designar  uma  mesma  história  distribuída  por  diferentes  mídias. O presente trabalho utiliza o termo ``narrativa transmídia'' como tradução do termo \textit{``transmedia storytelling''} desenvolvido por \citeonline{jenkins_2003} e por sua definição ser suficientemente abrangente para abrigar os termos anteriormente citados.
 
-  Diversos trabalhos em Computação têm sido publicados a respeito de narrativas transmídias e suas aplicações: convergência dos meios digitais \cite{murray_2012}; design, análise ou implementação de jogos de realidade aumentada, seja para entretenimento, saúde ou educação \cite{bonsignore_2012,evans_2014,johnston_2012,holler_2014}; aplicativos de segunda tela sincronizados com seriados de TV \cite{nandakumar_2014}; análise de projetos transmídia em geral \cite{amy_2014}; utilização de jogos pelo Exército norte-americano para treinamentos diversos \cite{raybourn_2014} e análise transmídia das telenovelas brasileiras \cite{murakami_2015} são alguns exemplos.
+  Diversos trabalhos em Computação têm sido publicados a respeito de narrativas transmídias e suas aplicações: design, análise ou implementação de jogos de realidade aumentada, seja para entretenimento, saúde ou educação \cite{bonsignore_2012,evans_2014,johnston_2012,holler_2014}; aplicativos de segunda tela sincronizados com seriados de TV \cite{nandakumar_2014}; utilização de jogos pelo Exército norte-americano para treinamentos diversos \cite{raybourn_2014} e análise transmídia das telenovelas brasileiras \cite{murakami_2015} são alguns exemplos.
 
   Essa diversidade de aplicações pode produzir incertezas sobre como a Computação tem contribuído para o desenvolvimento desse conceito multidisciplinar. Considerando a falta de revisões e classificações sobre narrativas transmídias, a discussão central a ser desenvolvida nesse trabalho é possibilitar uma melhor visualização e entendimento do atual estado da arte das pesquisas sobre o tema.  O objetivo desse estudo é conduzir uma revisão sistemática acerca de narrativas transmídia em Computação a fim de:
 
@@ -205,11 +204,17 @@ bookmarksdepth=4
 
   (b) classificar as pesquisas em narrativas transmídias com base nos tópicos e objetivos encontrados.
 
+  % ----------------------------------------------------------
+  % Métodos
+  % ----------------------------------------------------------
+  % definir revisão sistemática
+  % suas etapas
+  % o que foi realizado em cada etapa
+  % explicar as categorias de classificação
   \section{Métodos}
 
-  \textsf{(definir revisão sistemática, suas etapas e o que foi realizado em cada uma)}
 
-  Uma revisão sistemática é um método que possibilita a avaliação e interpretação de toda a pesquisa relevante acessível para uma ou mais questões de pesquisa ou evento de interesse. Para essa revisão, seguiu-se um processo definido para a condução de revisões sistemáticas proposto por \citeonline{kit_cha_2007}:
+  Uma revisão sistemática é um método que possibilita a avaliação e interpretação de toda a pesquisa relevante acessível para uma ou mais questões de pesquisa ou evento de interesse. Para esse artigo, seguiu-se um processo definido para a condução de revisões sistemáticas proposto por \citeonline{kit_cha_2007}:
 
   \begin{description}
     \item[Etapa 1: Planejamento da revisão] \hfill \\
@@ -227,17 +232,16 @@ bookmarksdepth=4
 
   \subsection{Planejamento e Condução da revisão}
 
-  (\ldots)
+  Como etapa prévia ao planejamento, conduziu-se uma pesquisa manual para identificar revisões sistemáticas sobre narrativas transmídias, e nenhum trabalho específico sobre o tema foi encontrado. Entretanto, trabalhos como o de \citeonline{murray_2012} e de \citeonline{amy_2014} resultaram dessa busca. O primeiro desenvolve o conceito de convergência dos meios digitais a fim de produzir narrativas transmídias que sejam imersivas e significativas e o segundo propõe um modelo de análise de projetos transmídia.
+  No contexto desse artigo, utilizou-se a abordagem básica para a realização de uma revisão sistemática identificada em \citeonline{kit_cha_2007}, a fim de realizar os objetivos mencionados anteriormente, baseando-se nas seguintes questões de pesquisa:
 
   \emph{Questão 1: Quais tópicos são mais pesquisados sobre narrativas transmídias?}
 
   \emph{Questão 2: Quais os objetivos mais apresentados?}
 
-  % DÚVIDA %\emph{Questão 3: Que perspectiva de pesquisas futuras se pode inferir sobre narrativas transmídia?}
+  % TODO: DÚVIDA %\emph{Questão 3: Que perspectiva de pesquisas futuras se pode inferir sobre narrativas transmídia?}
 
-  (\ldots)
-
-  A \textit{string} de busca utilizada foi: ((narrativ* OR storytelling OR ``digital storytelling'') AND (``second screen'' OR multiscreen OR interactive OR transmedia OR crossmedia OR ``cross media'')). A \autoref{tab-queries2} apresenta o protocolo utilizado em cada base de dados.
+  Para o propósito desse estudo, a revisão sistemática foi realizada entre novembro e dezembro de 2015, nas seguintes bases de dados internacionais: (a) ACM Digital Library, (b) IEEE Xplore, (c) ScienceDirect e (d) Scopus. As buscas foram restritas a trabalhos publicados em língua inglesa entre 2009 e 2015, e nas bases (c) e (d) restringiu-se às áreas de Ciências da Computação e Engenharia.  A \textit{string} de busca utilizada foi: ((narrativ* OR storytelling OR ``digital storytelling'') AND (``second screen'' OR multiscreen OR interactive OR transmedia OR crossmedia OR ``cross media'')). A \autoref{tab-queries2} apresenta o protocolo utilizado em cada base de dados.
 
   \begin{table}[htb]
     \ABNTEXfontereduzida
@@ -301,6 +305,10 @@ bookmarksdepth=4
 
   Comentários adicionais: na seleção: na extração: 97 aceitos, 19 com alta prioridade de leitura, 44 com prioridade
 
+  % ----------------------------------------------------------
+  % Resultados
+  % ----------------------------------------------------------
+  % Apresentar os resultados da extração
   \section{Resultados}
   equanto a \autoref{diag-trata-de-para} ..
 
@@ -367,11 +375,21 @@ bookmarksdepth=4
     \legend{Fonte: Produzido pelos autores.}
   \end{table}
 
+  % ----------------------------------------------------------
+  % Discussão
+  % ----------------------------------------------------------
+  % Trabalhar a questão de que foram encontrados muitos resultados duplicados, muitos estudos de caso, somente uma pesquisa abordando a questão da sincronização dos dados
+  % Comentar a quantidade de trabalhos que apresentam estudos de caso
+  % Muitos jogos de realidade aumentada em diversas áreas do conhecimento
   \section{Discussão}
 
-  Trabalhar a questão de que foram encontrados muitos resultados duplicados, muitos estudos de caso, somente uma pesquisa abordando a questão da sincronização dos dados
 
 
+  % ----------------------------------------------------------
+  % Conclusão
+  % ----------------------------------------------------------
+  % A revisão sistemática mostra como a pesquisa sobre narrativas transmídia é multidisciplinar
+  % As pesquisas sobre narrativas transmídia em Computação continuam em alta, especialmente nas aplicações em jogos e segunda tela
   \section{Conclusão}
 
   % ---
