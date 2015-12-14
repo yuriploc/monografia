@@ -197,7 +197,6 @@ bookmarksdepth=4
   % explicar as categorias de classificação
   \section{Métodos}
 
-
   Uma revisão sistemática é um método que possibilita a avaliação e interpretação de toda a pesquisa relevante acessível para uma ou mais questões de pesquisa ou evento de interesse. Para esse artigo, seguiu-se um processo definido para a condução de revisões sistemáticas proposto por \citeonline{kit_cha_2007}:
 
   \begin{description}
@@ -340,14 +339,21 @@ bookmarksdepth=4
   % Muitos jogos de realidade aumentada em diversas áreas do conhecimento
   \section{Discussão}
 
-  Nessa seção, são analisados os resultados encontrados na revisão sistemática, a fim de responder às questões de pesquisa elaboradas na \autoref{subsec-planejamento}.
+  Nessa seção são analisados os resultados encontrados na revisão sistemática, a fim de responder às questões de pesquisa elaboradas na \autoref{subsec-planejamento}.
 
   \subsection{Quais tópicos são mais pesquisados sobre narrativas transmídias?}
-  Por meio da tabela \autoref{tab-trata-de}, é possível perceber que o estudo de caso é o trabalho mais publicado, seguido da apresentação de conceitos. É possível que essas categorias sejam mais desenvolvidas pelos pesquisadores por conta da falta de trabalhos de referência que especifiquem aplicações de narrativas transmídia na Computação, o que pode levar à documentação de experiências práticas a fim de testar ideias (estudo de caso) que não necessariamente são oriundas da Computação ou conceituar termos e abstrações sobre narrativas transmídia na Computação.
+
+  Por meio da \autoref{tab-trata-de}, é possível perceber que o estudo de caso é o trabalho mais publicado, seguido da apresentação de conceitos. É possível que essas categorias sejam mais desenvolvidas pelos pesquisadores por conta da falta de trabalhos de referência que especifiquem aplicações de narrativas transmídia na Computação, o que pode levar à documentação de experiências práticas a fim de testar ideias (estudo de caso) que não necessariamente são oriundas da Computação ou conceituar termos e abstrações sobre narrativas transmídia na Computação.
+
+  Em \citeonline{dionisio_2015}, por exemplo, pode-se ver como os autores apresentam um estudo de caso em que se analisa como narrativas transmídia auxiliam a inserir novos jogadores no contexto dos jogos de tabuleiro. Já \citeonline{velikovsky_2014} introduz conceitos para analisar narrativas transmídia e reforçar o conceito de videogame como arte.
 
   A pouca ênfase em estudos que trabalham o sincronismo de dados nas narrativas transmídia é um dado que pode causar certo estranhamento. Considerando a narrativa transmídia parte de um sistema distribuído, pois ela é espalhada através de vários meios, o sincronismo de dados é um tema tratado e com processos e ferramentas bem desenvolvidos, como aponta \citeonline{sementille_1999}.
 
-Planejar 20, implementar 52, analisar 14, adaptar 11
+  \subsection{Quais os objetivos mais apresentados?}
+
+  Como pode ser observado na \autoref{tab-trata-de}, é notória a quantidade de artigos que têm como objetivo principal implementar uma narrativa transmídia. A título de exemplo, \citeonline{tomi_2013} relatam como se deu a implementação de um livro de realidade aumentada para auxiliar crianças em fase de pré-escola a aprender os números. Planejamento, também tratado como \textit{design} ou criação, de narrativas transmídia figura entre os objetivos mais publicados. \citeonline{bonsignore_2012} discute o \textit{design} e jogabilidade dos jogos de realidade aumentada como espaços participativos de design.
+
+  As narrativas transmídia possuem diversas área de aplicação, e as publicações em Computação notoriamente apresentam trabalhos nas áreas de artes \cite{santorineos_2009,ha_2012,jung_2012,katifori_2014}, educação \cite{raybourn_2014,xiao_2013,mcauliffe_2011,ballagas_2011} e entretenimento \cite{willis_2013,choi_2010,evans_2014,nandakumar_2014,holler_2014,murakami_2015}.
 
   % ----------------------------------------------------------
   % Conclusão
@@ -356,8 +362,9 @@ Planejar 20, implementar 52, analisar 14, adaptar 11
   % As pesquisas sobre narrativas transmídia em Computação continuam em alta, especialmente nas aplicações em jogos e segunda tela
   \section{Conclusão}
 
-  % ---
+  
 
+  % ---
   % Finaliza a parte no bookmark do PDF, para que se inicie o bookmark na raiz
   % ---
   \bookmarksetup{startatroot}%
@@ -371,8 +378,6 @@ Planejar 20, implementar 52, analisar 14, adaptar 11
   % ---
   % Título e resumo em língua estrangeira
   % ---
-
-  % \twocolumn[    		% INICIO DE ARTIGO EM DUAS COLUNAS
 
   % titulo em inglês
   \titulo{Research topics on transmedia storytelling}
@@ -392,12 +397,27 @@ Planejar 20, implementar 52, analisar 14, adaptar 11
     \end{otherlanguage*}
   \end{resumoumacoluna}
 
-  % ]  				% FIM DE ARTIGO EM DUAS COLUNAS
   % ---
 
   % ----------------------------------------------------------
   % Referências bibliográficas
   % ----------------------------------------------------------
   \bibliography{mono}
+  % ----------------------------------------------------------
+  % Anexos
+  % ----------------------------------------------------------
+  \cftinserthook{toc}{AAA}
+  % ---
+  % Inicia os anexos
+  % ---
+  %\anexos
+  \begin{anexosenv}
+
+    % ---
+    \chapter{Artigos resultantes da revisão sistemática}
+    % ---
+    aqui vai a tabela com os 97 artigos encontrados e classificados.
+
+  \end{anexosenv}
 
 \end{document}
