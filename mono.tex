@@ -25,7 +25,6 @@ brazil,				% o último idioma é o principal do documento
 sumario=tradicional
 ]{abntex2}
 
-
 % ---
 % PACOTES
 % ---
@@ -47,10 +46,6 @@ sumario=tradicional
 % Pacotes de diagrama
 % ---
 \usepackage{smartdiagram}
-% ---
-% Pacotes adicionais, usados apenas no âmbito do Modelo Canônico do abnteX2
-% ---
-\usepackage{lipsum}				% para geração de dummy text
 % ---
 
 % ---
@@ -143,8 +138,6 @@ bookmarksdepth=4
 % ----
 \begin{document}
 
-  % Seleciona o idioma do documento (conforme pacotes do babel)
-  %\selectlanguage{english}
   \selectlanguage{brazil}
 
   % Retira espaço extra obsoleto entre as frases.
@@ -154,12 +147,6 @@ bookmarksdepth=4
   % ELEMENTOS PRÉ-TEXTUAIS
   % ----------------------------------------------------------
 
-  %---
-  %
-  % Se desejar escrever o artigo em duas colunas, descomente a linha abaixo
-  % e a linha com o texto ``FIM DE ARTIGO EM DUAS COLUNAS''.
-  % \twocolumn[    		% INICIO DE ARTIGO EM DUAS COLUNAS
-  %
   %---
   % página de titulo
   \maketitle
@@ -173,9 +160,6 @@ bookmarksdepth=4
     \noindent
     \textbf{Palavras-chave}: narrativa transmídia. transmídia. revisão sistemática.
   \end{resumoumacoluna}
-
-  % ]  				% FIM DE ARTIGO EM DUAS COLUNAS
-  % ---
 
   % ----------------------------------------------------------
   % ELEMENTOS TEXTUAIS
@@ -231,6 +215,7 @@ bookmarksdepth=4
   \end{description}
 
   \subsection{Planejamento e Condução da revisão}
+  \label{subsec-planejamento}
 
   Como etapa prévia ao planejamento, conduziu-se uma pesquisa manual para identificar revisões sistemáticas sobre narrativas transmídias, e nenhum trabalho específico sobre o tema foi encontrado. Entretanto, trabalhos como o de \citeonline{murray_2012} e de \citeonline{amy_2014} resultaram dessa busca. O primeiro desenvolve o conceito de convergência dos meios digitais a fim de produzir narrativas transmídias que sejam imersivas e significativas, enquanto o segundo propõe um modelo de análise de projetos transmídia.
 
@@ -249,7 +234,6 @@ bookmarksdepth=4
     \caption[\textit{Strings} de busca]{\textit{Strings} de busca.}
     \label{tab-queries2}
     \begin{tabular}{p{2.0cm}|p{9.3cm}|p{2.8cm}}
-      %\hline
       \textbf{Fonte} & \textbf{\textit{String} de busca} & \textbf{Nota} \\
       \hline
       ACM & Title:((narrativ* OR storytelling OR ``digital storytelling'') AND (``second screen'' OR multiscreen OR interactive OR transmedia OR crossmedia OR ``cross media'')) OR Abstract:((narrativ* OR storytelling OR ``digital storytelling'') AND (``second screen'' OR multiscreen OR interactive OR transmedia OR crossmedia OR ``cross media'')) & Busca em ``Advanced Search'', filtro de data adicionado manualmente \\
@@ -259,9 +243,7 @@ bookmarksdepth=4
       ScienceDirect & pub-date > 2008 and tak((narrativ* OR storytelling OR ``digital storytelling'') AND (``second screen'' OR multiscreen OR interactive OR transmedia OR crossmedia OR ``cross media'')) [All Sources(Computer Science,Engineering)]) & Busca em ``Advanced search'', filtros ``pub-date'' e ``All Sources'' adicionados manualmente \\
       \hline
       Scopus & TITLE-ABS ( ( narrativ*  OR  storytelling  OR  ``digital storytelling'' )  AND  ( ``second screen''  OR  multiscreen  OR  interactive  OR  transmedia  OR  crossmedia  OR  ``cross media'' ) )  AND  ( LIMIT-TO ( SUBJAREA ,  ``COMP'' )  OR  LIMIT-TO ( SUBJAREA ,  ``ENGI'' ) )  AND  ( LIMIT-TO ( PUBYEAR ,  2016 )  OR  LIMIT-TO ( PUBYEAR ,  2015 )  OR  LIMIT-TO ( PUBYEAR ,  2014 )  OR  LIMIT-TO ( PUBYEAR ,  2013 )  OR  LIMIT-TO ( PUBYEAR ,  2012 )  OR  LIMIT-TO ( PUBYEAR ,  2011 )  OR  LIMIT-TO ( PUBYEAR ,  2010 )  OR  LIMIT-TO ( PUBYEAR ,  2009 ) ) & Busca em ``Advanced search'', filtros ``LIMIT-TO'' adicionados manualmente \\
-      % \hline
     \end{tabular}
-    %\legend{Fonte: Produzido pelos autores.}
   \end{table}
 
   Com o propósito de identificar os critérios de inclusão, exclusão e extração, foram pensadas maneiras de se classificar os artigos a partir da estrutura ``O artigo trata de (categoria) para (objetivo) narrativas transmídia'', como pode ser visto na \autoref{diag-trata-de-para}.
@@ -275,17 +257,15 @@ bookmarksdepth=4
       \smartdiagramset{font=\scriptsize, module minimum width=2.5cm, uniform arrow color=true, module x sep=4.0cm, back arrow disabled, uniform color list=white for 3 items}
       \smartdiagram[flow diagram:horizontal]{Conceitos \\ Processos \\ Ferramentas \\ Sincronismo de dados \\ Estudo de caso \\, Planejar \\ Implementar \\ Analisar \\ Adaptar, Narrativas transmídia} \\
     \end{center}
-    %\legend{Fonte: Produzido pelos autores}
   \end{figure}
 
-  A pesquisa inicial resultou em 1432 trabalhos, sendo 100 desses duplicados por conta da utilização de fontes de pesquisa que são agregadoras de publicações, como Scopus e ScienceDirect. A atividade de identificação e seleção dos estudos resumiu-se na leitura rápida dos títulos e resumos para associá-los aos critérios de inclusão ou exclusão. Como pode ser observado na \autoref{tab-article-selection}, dos 97 trabalhos selecionados, 21 (1,47\%) apresentam conceitos, 10 (0,70\%) propõem processos, somente 13 (0,90\%) mostram ferramentas, apenas um (0,07\%) trata sincronismo de dados e a grande maioria dos trabalhos (3,63\%) apresentam estudos de caso.
+  A pesquisa inicial resultou em 1432 trabalhos, sendo 100 desses duplicados por conta da utilização de fontes de pesquisa que são agregadoras de publicações, como Scopus e ScienceDirect. A atividade de identificação e seleção dos estudos resumiu-se à leitura rápida dos títulos e resumos para associá-los aos critérios de inclusão ou exclusão. Como pode ser observado na \autoref{tab-article-selection}, dos 97 trabalhos selecionados, 21 (1,47\%) apresentam conceitos, 10 (0,70\%) propõem processos, somente 13 (0,90\%) mostram ferramentas, apenas um (0,07\%) trata sincronismo de dados e a grande maioria dos trabalhos (3,63\%) apresentam estudos de caso.
 
   \begin{table}[htb]
     \ABNTEXfontereduzida
     \caption[Etapa de seleção]{Etapa de seleção.}
     \label{tab-article-selection}
     \begin{tabular}{p{3.0cm}|p{2.0cm}|p{1.0cm}|p{1.0cm}|p{1.0cm}|p{1.0cm}|p{1.0cm}|p{2.0cm}}
-      %\hline
       \textbf{Fonte} & \textbf{Resultantes da busca} & \textbf{CI1} & \textbf{CI2} & \textbf{CI3} & \textbf{CI4} & \textbf{CI5} & \textbf{Selecionados}  \\
       \hline
       ACM Digital Library & 240 & 9 & 4 & 6 & 1 & 12 & 32 \\
@@ -297,9 +277,7 @@ bookmarksdepth=4
       Scopus & 970 & 12 & 4 & 4 & 0 & 30 & 50 \\
       \hline
       \textbf{Total} & \textbf{1432} & \textbf{21} & \textbf{10} & \textbf{13} & \textbf{1} & \textbf{52} & \textbf{97} \\
-      % \hline
     \end{tabular}
-    % \legend{Fonte: Produzido pelos autores.}
   \end{table}
 
   % ----------------------------------------------------------
@@ -316,7 +294,6 @@ bookmarksdepth=4
     \label{tab-trata-de}
     \begin{center}
       \begin{tabular}{p{3.0cm}|p{2.0cm}}
-        %\hline
         \textbf{Trata de} & \textbf{Artigos} \\
         \hline
         Conceitos & 21 \\
@@ -328,12 +305,10 @@ bookmarksdepth=4
         Sincronismo & 1\\
         \hline
         Estudo de Caso & 52\\
-        % \hline
         \hline
         \textbf{Total} & \textbf{97} \\
       \end{tabular}
     \end{center}
-    % \legend{Fonte: Produzido pelos autores.}
   \end{table}
 
   \begin{table}[htb]
@@ -342,7 +317,6 @@ bookmarksdepth=4
     \label{tab-para}
     \begin{center}
       \begin{tabular}{p{3.0cm}|p{2.0cm}}
-        %\hline
         \textbf{Objetivo} & \textbf{Artigos} \\
         \hline
         Planejar & 20 \\
@@ -354,10 +328,8 @@ bookmarksdepth=4
         Adaptar & 11 \\
         \hline
         \textbf{Total} & \textbf{97} \\
-        % \hline
       \end{tabular}
     \end{center}
-    % \legend{Fonte: Produzido pelos autores.}
   \end{table}
 
   % ----------------------------------------------------------
@@ -368,7 +340,14 @@ bookmarksdepth=4
   % Muitos jogos de realidade aumentada em diversas áreas do conhecimento
   \section{Discussão}
 
+  Nessa seção, são analisados os resultados encontrados na revisão sistemática, a fim de responder às questões de pesquisa elaboradas na \autoref{subsec-planejamento}.
 
+  \subsection{Quais tópicos são mais pesquisados sobre narrativas transmídias?}
+  Por meio da tabela \autoref{tab-trata-de}, é possível perceber que o estudo de caso é o trabalho mais publicado, seguido da apresentação de conceitos. É possível que essas categorias sejam mais desenvolvidas pelos pesquisadores por conta da falta de trabalhos de referência que especifiquem aplicações de narrativas transmídia na Computação, o que pode levar à documentação de experiências práticas a fim de testar ideias (estudo de caso) que não necessariamente são oriundas da Computação ou conceituar termos e abstrações sobre narrativas transmídia na Computação.
+
+  A pouca ênfase em estudos que trabalham o sincronismo de dados nas narrativas transmídia é um dado que pode causar certo estranhamento. Considerando a narrativa transmídia parte de um sistema distribuído, pois ela é espalhada através de vários meios, o sincronismo de dados é um tema tratado e com processos e ferramentas bem desenvolvidos, como aponta \citeonline{sementille_1999}.
+
+Planejar 20, implementar 52, analisar 14, adaptar 11
 
   % ----------------------------------------------------------
   % Conclusão
@@ -378,6 +357,7 @@ bookmarksdepth=4
   \section{Conclusão}
 
   % ---
+
   % Finaliza a parte no bookmark do PDF, para que se inicie o bookmark na raiz
   % ---
   \bookmarksetup{startatroot}%
