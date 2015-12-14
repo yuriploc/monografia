@@ -40,6 +40,7 @@ sumario=tradicional
 \usepackage{color}				% Controle das cores
 \usepackage{graphicx}			% Inclusão de gráficos
 \usepackage{microtype} 			% para melhorias de justificação
+\usepackage{longtable}
 % ---
 
 % ---
@@ -287,7 +288,7 @@ bookmarksdepth=4
   \section{Resultados}
   \label{sec-resultados}
 
-  Devido à quantidade de documentos encontrados não permitir sua exposição no corpo desse trabalho, foram produzidas tabelas para representar as classificações das categorias utilizadas na etapa de seleção e dos objetivos utilizados na extração dos \textit{papers} durante o processo de revisão. A tabela com todos os 97 artigos divididos por categorias pode ser encontrada em \textbf{\emph{ONDE? ANEXO? URL?}}. Aqui, a \autoref{tab-trata-de} apresenta a classificação e a quantidade de documentos pertencentes a cada categoria, e a \autoref{tab-para} mostra os objetivos e quantos trabalhos pertencem a cada um deles.
+  Devido à quantidade de documentos encontrados não permitir sua exposição no corpo desse trabalho, foram produzidas tabelas para representar as classificações das categorias utilizadas na etapa de seleção e dos objetivos utilizados na extração dos \textit{papers} durante o processo de revisão. A tabela com todos os 97 artigos divididos por categorias pode ser encontrada no \autoref{sec-anexos}. Aqui, a \autoref{tab-trata-de} apresenta a classificação e a quantidade de documentos pertencentes a cada categoria, e a \autoref{tab-para} mostra os objetivos e quantos trabalhos pertencem a cada um deles.
 
   \begin{table}[htb]
     \ABNTEXfontereduzida
@@ -348,7 +349,7 @@ bookmarksdepth=4
 
   Por meio da \autoref{tab-trata-de}, é possível perceber que o estudo de caso é o trabalho mais publicado, seguido da apresentação de conceitos. É possível que essas categorias sejam mais desenvolvidas pelos pesquisadores por conta da falta de trabalhos de referência que especifiquem aplicações de narrativas transmídia na Computação, o que pode levar à documentação de experiências práticas a fim de testar ideias (estudo de caso) que não necessariamente são oriundas da Computação ou conceituar termos e abstrações sobre narrativas transmídia na Computação.
 
-  Em \citeonline{dionisio_2015}, por exemplo, pode-se ver como os autores apresentam um estudo de caso em que se analisa como narrativas transmídia auxiliam a inserir novos jogadores no contexto dos jogos de tabuleiro. Já \citeonline{velikovsky_2014} introduz conceitos para analisar narrativas transmídia e reforçar o conceito de videogame como arte.
+  Em \citeonline{dionisio_2015}, por exemplo, pode-se ver como os autores apresentam um estudo de caso em que se analisa como narrativas transmídia auxiliam a inserir novos jogadores no contexto dos jogos de tabuleiro. Já \citeonline{velikovsky_2014}, introduz conceitos para analisar narrativas transmídia e reforçar o conceito de videogame como arte.
 
   A pouca ênfase em estudos que trabalham o sincronismo de dados nas narrativas transmídia é um dado que pode causar certo estranhamento. Considerando a narrativa transmídia parte de um sistema distribuído, pois ela é espalhada através de vários meios, o sincronismo de dados é um tema tratado e com processos e ferramentas bem desenvolvidos, como aponta \citeonline{sementille_1999}.
 
@@ -367,7 +368,7 @@ bookmarksdepth=4
 
   A convergência produzida a partir da capacidade de agregação da Internet promoveu o surgimento das narrativas transmídia, que dispersam o enredo em diversas plataformas. Como uma maneira de contar histórias apoiada fortemente nas tecnologias digitais, as pesquisas em narrativas transmídia na Computação são amplas e variadas e uma classificação e organização dessa produção pode ser um mecanismo útil para compreender seu atual estado da arte.
 
-  Este estudo apresenta uma revisão sistemática sobre narrativas transmídia em Computação a partir de objetivos e questões de pesquisas elaborados na \autoref{sec-metodos}. Os resultados da pesquisa, apresentados na \autoref{sec-resultados} e discutidos na seção \autoref{sec-discussao}, mostram que as pesquisas se caracterizam por apresentarem grandes quantidades de estudos de caso e conceitos com a finalidade de implementar e planejar narrativas transmídia. A utilização de outras fontes de pesquisa produziriam diferentes resultados, bem como o uso de categorias de classificação e de objetivos não abordados nesse trabalho, o que permite o desenvolvimento de futuras pesquisas sobre o tema.
+  Este estudo apresenta uma revisão sistemática sobre narrativas transmídia em Computação a partir de objetivos e questões de pesquisas elaborados na \autoref{sec-metodos}. Os resultados da pesquisa, apresentados na \autoref{sec-resultados} e discutidos na \autoref{sec-discussao}, mostram que as pesquisas se caracterizam por apresentarem grandes quantidades de estudos de caso e conceitos com a finalidade de implementar e planejar narrativas transmídia. A utilização de outras fontes de pesquisa produziriam diferentes resultados, bem como o uso de categorias de classificação e de objetivos não abordados nesse trabalho, o que permite o desenvolvimento de futuras pesquisas sobre o tema.
 
   Esse trabalho visa contribuir para a discussão de uma possível classificação e categorização das pesquisas em narrativas transmídia para auxiliar a comunidade acadêmica a compreender e identificar temas relevantes de pesquisa.
 
@@ -423,7 +424,206 @@ bookmarksdepth=4
     % ---
     \chapter{Artigos resultantes da revisão sistemática}
     % ---
-    aqui vai a tabela com os 97 artigos encontrados e classificados.
+    \tiny
+    \centering
+    \label{sec-anexos}
+    \begin{longtable}{p{6.0cm}|p{3.0cm}|p{.6cm}|p{2.0cm}|p{2.0cm}}
+      \textbf{Título} & \textbf{Autor} & \textbf{Ano} & \textbf{Trata de} & \textbf{Para} \\
+      \hline
+      An Interactive Mobile Augmented Reality Magical Playbook: Learning Number with the Thirsty Crow&Azfar Bin Tomi and Dayang Rohaya Awang Rambli&2013&Estudo de Caso & Planejar \\
+      \hline
+      From tradition to emerging practice: A hybrid computational production model for Interactive Documentary &Insook Choi&2010&Processo & Implementar \\
+      \hline
+      An Alternate Reality Game for Facility Resilience (ARGFR) &Jing Pan and Xing Su and Zheng Zhou&2015&Estudo de Caso & Implementar \\
+      \hline
+      Technology-enhanced role-play for social and emotional learning context \& Intercultural empathy &Mei Yii Lim and Karin Leichtenstern and Michael Kriegel and Sibylle Enz and Ruth Aylett and Natalie Vannini and Lynne Hall and Paola Rizzo&2011&Ferramenta & Implementar\\
+      \hline
+      Them and Us: An indoor pervasive gaming experience &Alan Chamberlain and Fernando Martínez-Reyes and Rachel Jacobs and Matt Watkins and Robin Shackford&2013&Estudo de Caso & Implementar\\
+      \hline
+      Kids in Fairytales: Experiential and Interactive Storytelling in Children's Libraries&Kang, Seokbin and Lee, Youngwoon and Lee, Suwoong&2015&Estudo de Caso & Analisar\\
+      \hline
+      I-Eng: An Interactive Toy for Second Language Learning&Jeong, Hayeon and Saakes, Daniel Pieter and Lee, Uichin&2015&Estudo de Caso & Implementar\\
+      \hline
+      Incorporating Fictionality into the Real Space: A Case of Enhanced TCG&Takahashi, Monami and Irie, Keisuke and Sakamoto, Mizuki and Nakajima, Tatsuo&2015&Estudo de Caso & Implementar\\
+      \hline
+      HideOut: Mobile Projector Interaction with Tangible Objects and Surfaces&Willis, Karl D. D. and Shiratori, Takaaki and Mahler, Moshe&2013&Ferramenta & Implementar\\
+      \hline
+      Flow Theory, Evolution \& Creativity: Or, ``Fun \& Games''&Velikovsky, JT&2014&Conceito & Analisar\\
+      \hline
+      Fall of Humans: Interactive Tabletop Games and Transmedia Storytelling&Dionisio, Mara and Gujaran, Aditya and Pinto, Miguel and Esteves, Augusto&2015&Estudo de Caso & Implementar\\
+      \hline
+      Expanding the Comics Canvas: GPS Comics&Samanci, Ozge and Tewari, Anuj&2012&Estudo de Caso & Adaptar\\
+      \hline
+      Evaluating Enjoyment Within Alternate Reality Games&Macvean, Andrew P. and Riedl, Mark O.&2011&Processo & Analisar\\
+      \hline
+      Engaging Theatre Audiences Before the Play: The Design of Playful Interactive Storytelling Experiences&Dima, Mariza&2013&Conceito & Adaptar\\
+      \hline
+      Don'T Open That Door: Designing Gestural Interactions for Interactive Narratives&Clifton, Paul and Caldwell, Jared and Kulka, Isaac and Fassone, Riccardo and Cutrell, Jonathan and Terraciano, Kevin and Murray, Janet and Mazalek, Ali&2013&Processo & Implementar\\
+      \hline
+      Designing Tangible Interfaces to Support Expression and Sensemaking in Interactive Narratives&Chu, Jean Ho&2015&Conceito & Planejar\\
+      \hline
+      Designing iDTV Applications Through Interactive Storyboards&Ara\'{u}jo, Eduardo Cruz and Soares, Luiz Fernando Gomes&2014&Ferramenta & Planejar\\
+      \hline
+      Designing Alternate Reality Games&Bonsignore, Elizabeth&2012&Conceito & Planejar\\
+      \hline
+      Design Tactics for Authentic Interactive Fiction: Insights from Alternate Reality Game Designers&Bonsignore, Elizabeth and Moulder, Vicki and Neustaedter, Carman and Hansen, Derek and Kraus, Kari and Druin, Allison&2014&Conceito & Planejar\\
+      \hline
+      Companion Apps for Long Arc TV Series: Supporting New Viewers in Complex Storyworlds with Tightly Synchronized Context-sensitive Annotations&Nandakumar, Abhishek and Murray, Janet&2014&Sincronismo & Adaptar\\
+      \hline
+      An Interactive Multimedia Framework for Digital Heritage Narratives&Adabala, Neeharika and Datha, Naren and Joy, Joseph and Kulkarni, Chinmay and Manchepalli, Ajay and Sankar, Aditya and Walton, Rebecca&2010&Ferramenta & Implementar\\
+      \hline
+      Augmented Creativity: Bridging the Real and Virtual Worlds to Enhance Creative Play&Z\"{u}nd, Fabio and Ryffel, Mattia and Magnenat, St{\'e}phane and Marra, Alessia and Nitti, Maurizio and Kapadia, Mubbasir and Noris, Gioacchino and Mitchell, Kenny and Gross, Markus and Sumner, Robert W.&2015&Processo & Implementar\\
+      \hline
+      Canyons, Deltas and Plains: Towards a Unified Sculptural Model of Location-based Hypertext&Millard, David E. and Hargood, Charlie and Jewell, Michael O. and Weal, Mark J.&2013&Conceito & Planejar\\
+      \hline
+      Adapting Historical Drama for the Web: A Model for Metadata Backed Publishing of Historical Drama Programmes&Davies, Rosamund and Rissen, Paul and Jewell, Michael O.&2013&Processo & Adaptar\\
+      \hline
+      WeQuest: Scalable Alternate Reality Games Through End-user Content Authoring&Macvean, Andrew and Hajarnis, Sanjeet and Headrick, Brandon and Ferguson, Aziel and Barve, Chinmay and Karnik, Devika and Riedl, Mark O.&2011&Ferramenta & Implementar\\
+      \hline
+      Transmedia in the Classroom: Breaking the Fourth Wall&Teske, Paul R. J. and Horstman, Theresa&2012&Estudo de Caso & Adaptar\\
+      \hline
+      Transcending Transmedia: Emerging Story Telling Structures for the Emerging Convergence Platforms&Murray, Janet H.&2012&Conceito & Planejar\\
+      \hline
+      The Remediation of Nosferatu: Exploring Transmedia Experiences&Ghellal, Sabiha and Morrison, Ann and Hassenzahl, Marc and Schaufler, Benjamin&2014&Estudo de Caso & Implementar\\
+      \hline
+      The Reading Glove: Designing Interactions for Object-based Tangible Storytelling&Tanenbaum, Joshua and Tanenbaum, Karen and Antle, Alissa&2010&Estudo de Caso & Implementar\\
+      \hline
+      The ABC's of ARGs: Alternate Reality Games for Learning&Olbrish, Koreen&2011&Conceito & Planejar\\
+      \hline
+      Storied Numbers: Supporting Media-rich Data Storytelling for Television&Robinson, Susan J. and Williams, Graceline and Parnami, Aman and Kim, Jinhyun and McGregor, Emmett and Chandler, Dana and Mazalek, Ali&2014&Ferramenta & Implementar\\
+      \hline
+      Social Interaction for Interactive Storytelling&de Lima, Edirlei Soares and Feij\'{o}, Bruno and Pozzer, Cesar T. and Ciarlini, Angelo E. M. and Barbosa, Simone D. J. and Furtado, Antonio L. and da Silva, Fabio A. Guilherme&2012&Ferramenta & Implementar\\
+      \hline
+      Silent Mutations: Physical-digital Interactions in Spaces&R{\'e}bola Winegarden, Claudia and Komor, Nicholas and Gilliland, Scott M.&2010&Conceito & Analisar\\
+      \hline
+      PuzzleTale: A Tangible Puzzle Game for Interactive Storytelling&Shen, Yang Ting and Mazalek, Ali&2010&Estudo de Caso & Implementar\\
+      \hline
+      Multisensory, pervasive, immersive: Towards a new generation of documents&Robinson, L.&2015&Conceito & Planejar\\
+      \hline
+      Designing interactive narratives for mobile augmented reality&Nam, Y.&2015&Processo & Implementar \\
+      \hline
+      Thresholds of transmedia storytelling: Applying G{\'e}rard Genette's paratextual theory to the 39 clues series for young readers&Nottingham-Martin, A.&2014&Conceito & Analisar \\
+      \hline
+      Beyond intuitive UI: Design considerations for attention, rhythm, and weight&Tan, A.&2014&Conceito & Analisar\\
+      \hline
+      Educational uses of transmedia storytelling. The ancestral letter&Rodriguez Illera, J.L. and Molas Castells, N.&2014&Estudo de Caso&Implementar \\
+      \hline
+      Immersive interactive narratives in augmented reality games&Viana, B.S. and Nakamura, R.&2014&Conceito & Planejar\\
+      \hline
+      Digitally augmented narratives for physical artifacts&Bellucci, A. and Diaz, P. and Aedo, I.&2014&Processo & Planejar\\
+      \hline
+      Transmedia storytelling and the creation of a converging space of educational practices&Rodr{\'i}gues, P.a  b  and Bidarra, J.a  c &2014&Conceito & Implementar\\
+      \hline
+      Narratives of augmented worlds&Shilkrot, R.a  and Montfort, N.b  and Maes, P.a &2014&Conceito & Planejar\\
+      \hline
+      StoryCube: Supporting children's storytelling with a tangible tool&Wang, D. and He, L. and Dou, K.&2014&Estudo de Caso & Implementar\\
+      \hline
+      The Bridge - A transmedia dialogue between TV, Film and Gaming&Elias, H.&2014&Conceito & Analisar\\
+      \hline
+      CHESS: Personalized Storytelling Experiences in Museums&Katifori, A.a  and Karvounis, M.a  and Kourtis, V.a  and Kyriakidi, M.a  and Roussou, M.a  and Tsangaris, M.a  and Vayanou, M.a  and Ioannidis, Y.a  and Balet, O.b  and Prados, T.b  and Keil, J.c  and Engelke, T.c  and Pujol, L.d &2014&Ferramenta & Adaptar\\
+      \hline
+      NARRATIVES: Geolocative cinema application&Nagler, S.a  and Hackett, M.b  and Hicks, A.a  and Zachkarko, K.b &2014&Estudo de Caso & Adaptar\\
+      \hline
+      The GamiMedia model: Gamifying content culture&Sakamoto, M. and Nakajima, T.&2014&Conceito & Analisar\\
+      \hline
+      The Malthusian Paradox: performance in an alternate reality game&Evans, E. and Flintham, M. and Martindale, S.&2014&Estudo de Caso & Implementar\\
+      \hline
+      A new paradigm for serious games: Transmedia learning for more effective training and education&Raybourn, E.M.&2014&Conceito & Planejar\\
+      \hline
+      The PC3 framework: A formal lens for analyzing interactive narratives across media forms&Magerko, B.&2014&Processo & Analisar\\
+      \hline
+      Revisiting history: Using alternate reality games to tell a centuryold tale&Lynch, R. and Mallon, B. and Connolly, C.&2014&Estudo de Caso & Implementar\\
+      \hline
+      Time tremors: Developing transmedia gaming for children&Holler, C.a  and Tindale, A.b  and Crowe, P.a  and Diamond, S.b  and Mayhew, A.a &2014&Estudo de Caso & Implementar\\
+      \hline
+      Walking into the Past: Design mobile app for the geo-referred and the multimodal user experience in the context of cultural heritage&Bollini, L.a  and De Palma, R.b  and Nota, R.a &2013&Estudo de Caso & Implementar\\
+      \hline
+      Augmenting Yu-Gi-Oh! Trading card game as persuasive transmedia storytelling&Sakamoto, M. and Nakajima, T.&2013&Conceito & Planejar\\
+      \hline
+      Digital storytelling within virtual environments: ``The Battle of Thermopylae''&Christopoulos, D. and Mavridis, P. and Andreadis, A. and Karigiannis, J.N.&2013&Estudo de Caso & Implementar\\
+      \hline
+      Language innovations in documentary 33 &Ren{\'o}, D.P. and Ruiz, S.L.&2013&Estudo de Caso & Analisar\\
+      \hline
+      Designing enhanced daily digital artifacts based on the analysis of product promotions using fictional animation stories&Sakamoto, M.a  and Nakajima, T.a  and Akioka, S.b &2013&Conceito & Planejar\\
+      \hline
+      Storytelling: An ancient human technology and critical-creative pedagogy for transformative learning&Kalogeras, S.&2013&Conceito & Planejar\\
+      \hline
+      Slideware2.0: A prototype of presentation system by integrating web2.0 and second screen to promote education communication&Xiao, R.a  and Wu, Z.b  and Sugiura, K.a &2013&Ferramenta & Implementar\\
+      \hline
+      Multiple-channel video installation as a precursor to transmedia-based artAb&Wu, G.a  and Gough, P.b  and De Berigny Wall OnacloV, C.c &2012&Estudo de Caso & Analisar\\
+      \hline
+      Tagtool: A collaborative virtual workspace for visual expression&Pintaric, T.a  and Dorninger, M.b  and Csisinko, M.a  and Dorninger, J.b  and Pilz, F.a  and Fritz, M.b  and Norden, M.a &2012&Estudo de Caso & Implementar\\
+      \hline
+      How to preserve inspirational environments that once surrounded a poet? Immersive 360 video and the cultural memory of Charles Causley's poetry&Kwiatek, K.&2012&Estudo de Caso & Implementar\\
+      \hline
+      Alternate reality game for university-level computer science education&Hakulinen, L.&2012&Estudo de Caso & Planejar\\
+      \hline
+      Experiments with the internet of things in museum space: QRator&Hudson-Smith, A. and Gray, S. and Ross, C. and Barthel, R. and De Jode, M. and Warwick, C. and Terras, M.&2012&Estudo de Caso & Adaptar\\
+      \hline
+      i-Theatre: Tangible interactive storytelling&Mu{\~n}oz, J. and Marchesoni, M. and Costa, C.&2012&Estudo de Caso & Implementar\\
+      \hline
+      Cyclic.: An interactive performance combining dance, graphics, music and kinect-technology&Jung, D.a  and Jensen, M.H.b  and Laing, S.c  and Mayall, J.d &2012&Estudo de Caso & Implementar\\
+      \hline
+      Making Learning Active with Interactive Whiteboards, Podcasts, and Digital Storytelling in ELL Classrooms&Hur, J.W. and Suh, S.&2012&Estudo de Caso & Adaptar\\
+      \hline
+      Miniature alive: Augmented reality-based interactive DigiLog experience in miniature exhibition&Ha, T.a  and Kim, K.b  and Park, N.a  and Seo, S.b  and Woo, W.a &2012&Estudo de Caso & Implementar\\
+      \hline
+      Mobile Urban Drama: Interactive storytelling in real world environments&Hansen, F.A. and Kortbek, K.J. and  GrønbÆk, K. &2012&Ferramenta & Implementar\\
+      \hline
+      Using an alternate reality game to increase physical activity and decrease obesity risk of college students&Johnston, J.D.a  and Massey, A.P.b  and Marker-Hoffman, R.L.a &2012&Estudo de Caso & Implementar\\
+      \hline
+      Scaling mobile alternate reality games with geo-location translation&Hajarnis, S. and Headrick, B. and Ferguson, A. and Riedl, M.O.&2011&Processo & Implementar\\
+      \hline
+      HIP-storytelling: Hand interactive projection for storytelling&Melo, N.a  and Salgado, P.a  and Iurgel, I.a  b  c  and Branco, P.a  c &2011&Estudo de Caso & Implementar\\
+      \hline
+      Mysteries and heroes: Using Imaginative Education to engage middle school learners in engineering&McAuliffe, L.a  and Ellis, G.W.a  and Ellis, S.K.a  and Huff, I.a  and McGinnis-Cavanaugh, B.b &2011&Estudo de Caso & Implementar\\
+      \hline
+      Electric agents: Combining television and mobile phones for an educational game&Ballagas, R.a  and Revelle, G.b  and Buza, K.a  and Horii, H.a  and Mori, K.a  and Raffle, H.a  and Spasojevic, M.a  and Go, J.a  and Cook, K.c  and Reardon, E.c  and Tsai, Y.-T.a  and Paretti, C.a &2011&Estudo de Caso & Implementar\\
+      \hline
+      Touching and being touched: Embodied experiences with belongings carried through memory and time&Veronesi, F.a  and Bongers, B.b &2010&Estudo de Caso & Implementar\\
+      \hline
+      Playing With Poetry a Portuguese Transmedia experience and a serious ARG&Gouveia, P.&2010&Estudo de Caso & Planejar\\
+      \hline
+      Harnessing ``e'' in storyworlds: Engage, enhance, experience, entertain&Norrington, A.&2010&Estudo de Caso & Implementar\\
+      \hline
+      Bridging media with the help of players&Nitsche, M. and Drake, M. and Murray, J.&2009&Estudo de Caso & Implementar\\
+      \hline
+      Introducing multiple interaction devices to interactive storytelling: Experiences from practice&Kurdyukova, E. and André, E. and Leichtenstern, K.&2009&Estudo de Caso & Implementar\\
+      \hline
+      Immersive mixed media augmented reality applications and technology&Kuchelmeister, V. and Shaw, J. and McGinity, M. and Del Favero, D. and Hardjono, A.&2009&Ferramenta & Implementar\\
+      \hline
+      Noon - A secret told by objects&Martins, T.a  b  and Sommerer, C.a  and Mignonneau, L.a  and Correia, N.b &2009&Estudo de Caso & Implementar\\
+      \hline
+      Action room: A low-cost hypermedia platform for experimental performances and spectacles&Santorineos, M. and Zoi, S.&2009&Estudo de Caso & Implementar\\
+      \hline
+      Arguing for multilingual motivation in web 2.0: An evaluation of a large-scale European pilot&Hainey, T.a  and Connolly, T.a  and Stansfield, M.a  and Boyle, L.a  and Josephson, J.b  and O'Donovan, A.c  and Ortiz, C.R.d  and Tsvetkova, N.e  and Stoimenova, B.e  and Tsvetanova, S.f &2009&Estudo de Caso & Planejar\\
+      \hline
+      Playing for Real: Designing Alternate Reality Games for Teenagers in Learning Contexts&Bonsignore, Elizabeth and Hansen, Derek and Kraus, Kari and Visconti, Amanda and Ahn, June and Druin, Allison&2013&Estudo de Caso & Implementar\\
+      \hline
+      Left to Their Own Devices: Ad Hoc Genres and the Design of Transmedia Narratives&Hashimov, Elmar and McNely, Brian&2012&Estudo de Caso & Adaptar\\
+      \hline
+      Narrative Agency and User Experience in Transmedia Narratives: Brazilian Telenovelas Case&Murakami, Mariane Harumi&2015&Estudo de Caso & Adaptar\\
+      \hline
+      Mixing reality and magic at Disney theme parks&Mine, M.&2009&Ferramenta & Implementar\\
+      \hline
+      Alice's adventures in an immersive mixed reality environment&Nakevska, M. and Jun Hu and Langereis, G. and Rauterberg, M.&2012&Estudo de Caso & Implementar\\
+      \hline
+      Transmedia Storytelling and Online Representations -- Issues of Trust on the Internet&Zingerle, A. and Kronman, L.&2011&Estudo de Caso & Analisar\\
+      \hline
+      Narrative paradox and the design of alternate reality games (ARGs) and blogs&Gouveia, P.&2009&Estudo de Caso & Analisar\\
+      \hline
+      Avatoys: Hibrid system with real and digital puppets&Antonijoan, M. and Soler, D. and Miralles, D.&2014&Estudo de Caso & Implementar\\
+      \hline
+      Tweeting with the telly on!&Lochrie, M. and Coulton, P.&2012&Estudo de Caso & Analisar\\
+      \hline
+      Transitions: A Crossmedia Interaction Relevant Aspect&Delgado Preti, J.P. and Miyamaru, F. and Vilela Leite Filgueiras, L.&2014&Ferramenta & Implementar\\
+      \hline
+      The Ghost Club Storyscape: Designing for transmedia storytelling&Blumenthal, H. and Yan Xu and Mokashi, S. and Ramanujam, N. and Nunes, J. and Shemaka, R.G.&2011&Estudo de Caso & Implementar\\
+      \hline
+      iFiction: Mobile technology, new media, Mixed Reality and literary creativity in English teaching&Chinthammit, Winyu and Thomas, Angela&2012&Estudo de Caso & Implementar\\
+      \hline
+      Wish shop: Designing for a transmedia production model&Heejun Lim and Chungkon Shi&2012&Processo & Planejar\\
+    \end{longtable}
 
   \end{anexosenv}
 
